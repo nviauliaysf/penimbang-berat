@@ -713,6 +713,70 @@
         "name": "Group 19 (2).png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "Group 6 (2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group 6 (2).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group 22 (5).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group 22 (5).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group (92).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group (92).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group 19 (3).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group 19 (3).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group (96).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group (96).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group (94).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group (94).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group (95).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group (95).png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Group 20 (2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Group 20 (2).png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2235,7 +2299,18 @@
         "selectedLayer": ""
       },
       "objectsGroups": [],
-      "variables": [],
+      "variables": [
+        {
+          "name": "musik_bg",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "sound_effect",
+          "type": "boolean",
+          "value": true
+        }
+      ],
       "instances": [
         {
           "angle": 0,
@@ -2296,8 +2371,72 @@
           "persistentUuid": "c8b25efd-acb7-4209-933f-78e5d3171bb6",
           "width": 1298,
           "x": -13,
-          "y": -23,
+          "y": 700,
           "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "settingss",
+          "name": "bg_settings",
+          "persistentUuid": "a1fbe518-4605-406a-a578-7ab23c807504",
+          "width": 0,
+          "x": 197,
+          "y": 78,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "settingss",
+          "name": "silang",
+          "persistentUuid": "fac570c0-aa76-437a-9f14-17441b562cb0",
+          "width": 0,
+          "x": 978,
+          "y": 55,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "settingss",
+          "name": "bgm",
+          "persistentUuid": "33025118-d11c-4276-a7e7-5db4972a7b4e",
+          "width": 0,
+          "x": 596,
+          "y": 170,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "settingss",
+          "name": "sfx",
+          "persistentUuid": "8e7655cc-8887-4d2d-8139-23eeac5cd9dd",
+          "width": 0,
+          "x": 582,
+          "y": 381,
+          "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2609,6 +2748,394 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "bg_settings",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 22 (4).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 886,
+                            "y": 0
+                          },
+                          {
+                            "x": 886,
+                            "y": 541
+                          },
+                          {
+                            "x": 0,
+                            "y": 541
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "silang",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 2.0247e-320
+            },
+            {
+              "name": "ButtonScaleTween",
+              "type": "ButtonStates::ButtonScaleTween",
+              "Scale": "Scale",
+              "ButtonFSM": "ButtonFSM",
+              "Tween": "Tween",
+              "IdleScale": 1,
+              "FocusedScale": 1.12,
+              "FadeInDuration": 0.1,
+              "FadeOutDuration": 0.2,
+              "PressedScale": 1,
+              "FadeInEasing": "easeInOutQuad",
+              "FadeOutEasing": "easeInOutQuad",
+              "PreviousState": "Idle"
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 1 (6).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 114,
+                            "y": 0
+                          },
+                          {
+                            "x": 114,
+                            "y": 113
+                          },
+                          {
+                            "x": 0,
+                            "y": 113
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "bgm",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 2.0247e-320
+            }
+          ],
+          "animations": [
+            {
+              "name": "default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Vector (41).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 118,
+                            "y": 0
+                          },
+                          {
+                            "x": 118,
+                            "y": 152
+                          },
+                          {
+                            "x": 0,
+                            "y": 152
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "off",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 6 (2).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 118,
+                            "y": 0
+                          },
+                          {
+                            "x": 118,
+                            "y": 152
+                          },
+                          {
+                            "x": 0,
+                            "y": 152
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "sfx",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 2.0247e-320
+            }
+          ],
+          "animations": [
+            {
+              "name": "default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group (91).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 153,
+                            "y": 0
+                          },
+                          {
+                            "x": 153,
+                            "y": 144
+                          },
+                          {
+                            "x": 0,
+                            "y": 144
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "off",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 22 (5).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 153,
+                            "y": 0
+                          },
+                          {
+                            "x": 153,
+                            "y": 144
+                          },
+                          {
+                            "x": 0,
+                            "y": 144
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -2625,6 +3152,18 @@
           },
           {
             "objectName": "opacity"
+          },
+          {
+            "objectName": "bg_settings"
+          },
+          {
+            "objectName": "silang"
+          },
+          {
+            "objectName": "bgm"
+          },
+          {
+            "objectName": "sfx"
           }
         ]
       },
@@ -2647,9 +3186,9 @@
                 "value": "ActivateBehavior"
               },
               "parameters": [
-                "mulai",
+                "bgm",
                 "ButtonFSM",
-                ""
+                "no"
               ]
             },
             {
@@ -2657,9 +3196,9 @@
                 "value": "ActivateBehavior"
               },
               "parameters": [
-                "pengaturan",
+                "sfx",
                 "ButtonFSM",
-                ""
+                "no"
               ]
             },
             {
@@ -2682,26 +3221,6 @@
               },
               "parameters": [
                 "1.2"
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "mulai",
-                "ButtonFSM",
-                "yes"
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "pengaturan",
-                "ButtonFSM",
-                "yes"
               ]
             }
           ]
@@ -2733,14 +3252,6 @@
                 "\"linear\"",
                 "1.2",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "1"
               ]
             },
             {
@@ -2777,9 +3288,321 @@
                 "ButtonFSM",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"settingss\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "pengaturan",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "mulai",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "pengaturan",
+                "ButtonScaleTween",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "bgm",
+                "ButtonFSM",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "sfx",
+                "ButtonFSM",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "bgm",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "musik_bg",
+                "Toggle",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "musik_bg",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                  },
+                  "parameters": [
+                    "bgm",
+                    "Animation",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "musik_bg",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                  },
+                  "parameters": [
+                    "bgm",
+                    "Animation",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "sfx",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "sound_effect",
+                "Toggle",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "sound_effect",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                  },
+                  "parameters": [
+                    "sfx",
+                    "Animation",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "sound_effect",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                  },
+                  "parameters": [
+                    "sfx",
+                    "Animation",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "silang",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"settingss\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "sfx",
+                "ButtonFSM",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "bgm",
+                "ButtonFSM",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "pengaturan",
+                "ButtonScaleTween",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "mulai",
+                "ButtonFSM",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "pengaturan",
+                "ButtonFSM",
+                "yes"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -2809,6 +3632,59 @@
               "width": 0
             }
           ],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "settingss",
+          "renderingType": "",
+          "visibility": false,
+          "cameras": [],
           "effects": [
             {
               "effectType": "Scene3D::HemisphereLight",
@@ -4210,6 +5086,16 @@
           "value": false
         },
         {
+          "name": "stop_teks",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "easy2",
+          "type": "boolean",
+          "value": false
+        },
+        {
           "name": "berat",
           "type": "number",
           "value": 0
@@ -4218,6 +5104,21 @@
           "name": "turun",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "layer",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "musik_bg",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "sound_effect",
+          "type": "boolean",
+          "value": true
         }
       ],
       "instances": [
@@ -4780,38 +5681,6 @@
           "x": 257,
           "y": 503,
           "zOrder": 33,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "suara",
-          "name": "mati_fsx",
-          "persistentUuid": "e3a8352a-f923-41c6-bb07-6a64bb996d22",
-          "width": 0,
-          "x": 589,
-          "y": 383,
-          "zOrder": 34,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "suara",
-          "name": "mati_bgm",
-          "persistentUuid": "9b11adb8-155c-40ab-8714-fb6567be183c",
-          "width": 0,
-          "x": 594,
-          "y": 180,
-          "zOrder": 35,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6912,6 +7781,54 @@
                   ]
                 }
               ]
+            },
+            {
+              "name": "off",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 22 (5).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 153,
+                            "y": 0
+                          },
+                          {
+                            "x": 153,
+                            "y": 144
+                          },
+                          {
+                            "x": 0,
+                            "y": 144
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -6937,7 +7854,7 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "on",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -6947,6 +7864,54 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "Vector (41).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 118,
+                            "y": 0
+                          },
+                          {
+                            "x": 118,
+                            "y": 152
+                          },
+                          {
+                            "x": 0,
+                            "y": 152
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "off",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 6 (2).png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -7086,6 +8051,16 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 2.0247e-320
+            },
+            {
               "name": "Tween",
               "type": "Tween::TweenBehavior"
             }
@@ -7150,6 +8125,16 @@
           "variables": [],
           "effects": [],
           "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 2.0247e-320
+            },
             {
               "name": "Tween",
               "type": "Tween::TweenBehavior"
@@ -7915,14 +8900,6 @@
           "actions": [
             {
               "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "0.1"
-              ]
-            },
-            {
-              "type": {
                 "value": "TextContainerCapability::TextContainerBehavior::SetValue"
               },
               "parameters": [
@@ -7959,6 +8936,16 @@
                 "True",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "isinya",
+                "AutoTyping",
+                "yes"
+              ]
             }
           ]
         },
@@ -7971,6 +8958,77 @@
               },
               "parameters": [
                 "teksssssssssssss",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "isinya",
+                "Text",
+                "=",
+                "\"Di timbangan kiri ada 10 kg semangka \nApa yang harus diletakkan di timbangan kanan agar seimbang?\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "isinya",
+                "AutoTyping",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "stop_teks",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "stop_teks",
                 "True",
                 ""
               ]
@@ -8039,130 +9097,138 @@
                 "value": "Wait"
               },
               "parameters": [
-                "0.01"
+                "0.2"
               ]
-            },
+            }
+          ],
+          "events": [
             {
-              "type": {
-                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
-              },
-              "parameters": [
-                "easy",
-                "Tween",
-                "\"hidup\"",
-                "311",
-                "\"easeInCubic\"",
-                "0.8",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "1.5"
-              ]
-            },
-            {
-              "type": {
-                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
-              },
-              "parameters": [
-                "easy",
-                "Tween",
-                "\"hidup\"",
-                "750",
-                "\"easeOutCubic\"",
-                "0.5",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "pengaturan",
-                "ButtonFSM",
-                "yes"
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "reset",
-                "ButtonFSM",
-                "yes"
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "reset",
-                "ButtonScaleTween",
-                "yes"
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "pengaturan",
-                "ButtonScaleTween",
-                "yes"
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "nanas",
-                "Draggable",
-                "yes"
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "jambu",
-                "Draggable",
-                "yes"
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "lemon",
-                "Draggable",
-                "yes"
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "0.5"
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "easy",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "easy",
+                    "Tween",
+                    "\"hidup\"",
+                    "311",
+                    "\"easeInCubic\"",
+                    "0.8",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "easy",
+                    "Tween",
+                    "\"hidup\"",
+                    "750",
+                    "\"easeOutCubic\"",
+                    "0.5",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "easy",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "jambu",
+                    "Draggable",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "lemon",
+                    "Draggable",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "nanas",
+                    "Draggable",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "pengaturan",
+                    "ButtonScaleTween",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "reset",
+                    "ButtonScaleTween",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "reset",
+                    "ButtonFSM",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "pengaturan",
+                    "ButtonFSM",
+                    "yes"
+                  ]
+                }
               ]
             }
           ]
@@ -9793,7 +10859,8 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "Tombol",
+          "folded": true,
+          "name": "Pengaturan",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -9836,12 +10903,6 @@
                     "ButtonFSM",
                     ""
                   ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
                 }
               ],
               "actions": [
@@ -9853,7 +10914,23 @@
                     "",
                     "\"settings\""
                   ]
-                },
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "LayerVisible"
+                  },
+                  "parameters": [
+                    "",
+                    "\"settings\""
+                  ]
+                }
+              ],
+              "actions": [
                 {
                   "type": {
                     "value": "ActivateBehavior"
@@ -9929,36 +11006,6 @@
                     "value": "ActivateBehavior"
                   },
                   "parameters": [
-                    "bgm",
-                    "ButtonFSM",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ActivateBehavior"
-                  },
-                  "parameters": [
-                    "sfx",
-                    "ButtonFSM",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ActivateBehavior"
-                  },
-                  "parameters": [
-                    "kembali",
-                    "ButtonFSM",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ActivateBehavior"
-                  },
-                  "parameters": [
                     "suara",
                     "ButtonFSM",
                     "yes"
@@ -9981,15 +11028,6 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "LayerVisible"
-                  },
-                  "parameters": [
-                    "",
-                    "\"settings\""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ButtonStates::ButtonFSM::IsClicked"
                   },
                   "parameters": [
@@ -10000,9 +11038,13 @@
                 },
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Once"
+                    "value": "BooleanVariable"
                   },
-                  "parameters": []
+                  "parameters": [
+                    "layer",
+                    "=",
+                    ""
+                  ]
                 }
               ],
               "actions": [
@@ -10053,6 +11095,36 @@
                     "ButtonFSM",
                     "yes"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "mati_fsx",
+                    "ButtonFSM",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "mati_bgm",
+                    "ButtonFSM",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "layer",
+                    "True",
+                    ""
+                  ]
                 }
               ]
             },
@@ -10061,13 +11133,192 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "LayerVisible"
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
                   },
                   "parameters": [
-                    "",
-                    "\"suara\""
+                    "menu",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ],
+              "actions": []
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "bgm",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "musik_bg",
+                    "Toggle",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "musik_bg",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                      },
+                      "parameters": [
+                        "bgm",
+                        "Animation",
+                        "=",
+                        "0"
+                      ]
+                    }
                   ]
                 },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "musik_bg",
+                        "False",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                      },
+                      "parameters": [
+                        "bgm",
+                        "Animation",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "sfx",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "sound_effect",
+                    "Toggle",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "sound_effect",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                      },
+                      "parameters": [
+                        "sfx",
+                        "Animation",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "sound_effect",
+                        "False",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                      },
+                      "parameters": [
+                        "sfx",
+                        "Animation",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
                   "type": {
                     "value": "ButtonStates::ButtonFSM::IsClicked"
@@ -10080,21 +11331,16 @@
                 },
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Once"
+                    "value": "BooleanVariable"
                   },
-                  "parameters": []
+                  "parameters": [
+                    "layer",
+                    "True",
+                    ""
+                  ]
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "value": "HideLayer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"suara\""
-                  ]
-                },
                 {
                   "type": {
                     "value": "ShowLayer"
@@ -10102,6 +11348,15 @@
                   "parameters": [
                     "",
                     "\"settings\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"suara\""
                   ]
                 },
                 {
@@ -10129,8 +11384,28 @@
                     "value": "ActivateBehavior"
                   },
                   "parameters": [
-                    "kembali",
+                    "mati_fsx",
                     "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "mati_bgm",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "layer",
+                    "False",
                     ""
                   ]
                 }
@@ -10148,12 +11423,6 @@
                     "ButtonFSM",
                     ""
                   ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
                 }
               ],
               "actions": [
@@ -10928,13 +12197,13 @@
           "name": "buha",
           "objects": [
             {
-              "name": "nanas"
+              "name": "apel"
             },
             {
-              "name": "lemon"
+              "name": "mangga"
             },
             {
-              "name": "jambu"
+              "name": "jeruk"
             }
           ]
         }
@@ -10966,6 +12235,16 @@
           "value": false
         },
         {
+          "name": "stop_teks",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "easy2",
+          "type": "boolean",
+          "value": false
+        },
+        {
           "name": "berat",
           "type": "number",
           "value": 0
@@ -10974,6 +12253,21 @@
           "name": "turun",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "layer",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "musik_bg",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "sound_effect",
+          "type": "boolean",
+          "value": true
         }
       ],
       "instances": [
@@ -11111,23 +12405,7 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "_10kg",
-          "persistentUuid": "e73f6bf9-c43e-4bca-8342-963995d07241",
-          "width": 0,
-          "x": 396,
-          "y": 551,
-          "zOrder": 12,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "semangka",
+          "name": "dua_lemon",
           "persistentUuid": "c12a6188-6a56-48ae-a5cb-c44670ac5dc9",
           "width": 0,
           "x": 391,
@@ -11143,11 +12421,11 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "nanas",
+          "name": "apel",
           "persistentUuid": "e1fbed66-8588-4061-aa1a-b163bbe8227e",
           "width": 0,
-          "x": 1099,
-          "y": 126,
+          "x": 1105,
+          "y": 156,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -11159,11 +12437,11 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "jambu",
+          "name": "jeruk",
           "persistentUuid": "7192fc0f-7519-4a8a-a8fc-1eca3a46cc70",
           "width": 0,
           "x": 1112,
-          "y": 290,
+          "y": 300,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -11175,11 +12453,11 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "lemon",
+          "name": "mangga",
           "persistentUuid": "1f94477a-de88-421d-b353-90cfe3265ad9",
           "width": 0,
-          "x": 1105,
-          "y": 440,
+          "x": 1111,
+          "y": 436,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -11319,47 +12597,15 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 98,
+          "height": 133,
           "keepRatio": true,
           "layer": "",
           "name": "isinya",
           "persistentUuid": "1d5568af-c797-42bd-927d-3139f1c05972",
           "width": 879,
           "x": 277,
-          "y": -128,
+          "y": -135,
           "zOrder": 22,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "koto_hitam",
-          "persistentUuid": "5dccf181-67b0-4473-8f51-4e5587e9f233",
-          "width": 0,
-          "x": 765,
-          "y": 547,
-          "zOrder": 23,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "kg",
-          "persistentUuid": "68e1b287-cb91-4290-98ea-37a58789d92c",
-          "width": 0,
-          "x": 789,
-          "y": 550,
-          "zOrder": 24,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -11386,12 +12632,156 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "easy",
+          "name": "medium",
           "persistentUuid": "435ee0cc-c4aa-4ccb-ba31-62ecd11f4012",
           "width": 0,
           "x": 527,
           "y": -311,
           "zOrder": 26,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "settings",
+          "name": "kotak_settings",
+          "persistentUuid": "fc524ea9-b18a-4fa5-8c41-224a39f88845",
+          "width": 0,
+          "x": 197,
+          "y": 78,
+          "zOrder": 27,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "settings",
+          "name": "menu",
+          "persistentUuid": "96cb55c5-e8d8-4620-b87c-adbabe4a5119",
+          "width": 0,
+          "x": 456,
+          "y": 255,
+          "zOrder": 28,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "settings",
+          "name": "suara",
+          "persistentUuid": "3568b219-829b-4f6c-bbf4-e5fc5cc54dfd",
+          "width": 0,
+          "x": 456,
+          "y": 373,
+          "zOrder": 29,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "settings",
+          "name": "silang",
+          "persistentUuid": "b5ae0f3e-dbd8-490e-8c17-27ff77e01ac6",
+          "width": 0,
+          "x": 978,
+          "y": 55,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "suara",
+          "name": "kotak_settings",
+          "persistentUuid": "a7855e14-c58b-43d1-8f6c-242a252c2d6c",
+          "width": 0,
+          "x": 197,
+          "y": 78,
+          "zOrder": 27,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "suara",
+          "name": "silang",
+          "persistentUuid": "66a1d33d-12f2-45bb-81a2-012387bb8b30",
+          "width": 0,
+          "x": 978,
+          "y": 55,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "suara",
+          "name": "sfx",
+          "persistentUuid": "df72e0ec-3679-478e-90f6-b4e5c04547fc",
+          "width": 0,
+          "x": 582,
+          "y": 381,
+          "zOrder": 31,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "suara",
+          "name": "bgm",
+          "persistentUuid": "f443a56e-8d66-41bc-a850-f73db6dfe079",
+          "width": 0,
+          "x": 596,
+          "y": 170,
+          "zOrder": 32,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "suara",
+          "name": "kembali",
+          "persistentUuid": "e6597746-1f0f-400c-ac6b-8c5b383b650b",
+          "width": 0,
+          "x": 257,
+          "y": 503,
+          "zOrder": 33,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -11658,7 +13048,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Group 15.png",
+                      "image": "Group 20 (2).png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -11701,7 +13091,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "nanas",
+          "name": "apel",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [
@@ -11790,7 +13180,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Group (85).png",
+                      "image": "Group (96).png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -11806,20 +13196,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 14,
+                            "x": 0,
                             "y": 0
                           },
                           {
-                            "x": 83,
+                            "x": 86,
                             "y": 0
                           },
                           {
-                            "x": 83,
-                            "y": 119
+                            "x": 86,
+                            "y": 87
                           },
                           {
-                            "x": 14,
-                            "y": 119
+                            "x": 0,
+                            "y": 87
                           }
                         ]
                       ]
@@ -11833,7 +13223,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "jambu",
+          "name": "jeruk",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [
@@ -11913,7 +13303,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Group (83).png",
+                      "image": "Group (94).png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -11929,20 +13319,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 1,
+                            "x": 0,
                             "y": 0
                           },
                           {
-                            "x": 73,
+                            "x": 72,
                             "y": 0
                           },
                           {
-                            "x": 73,
-                            "y": 97
+                            "x": 72,
+                            "y": 72
                           },
                           {
-                            "x": 1,
-                            "y": 97
+                            "x": 0,
+                            "y": 72
                           }
                         ]
                       ]
@@ -11956,7 +13346,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "lemon",
+          "name": "mangga",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [
@@ -12035,7 +13425,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Group (84).png",
+                      "image": "Group (95).png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -12052,19 +13442,19 @@
                         [
                           {
                             "x": 0,
-                            "y": 1
+                            "y": 0
                           },
                           {
-                            "x": 84,
-                            "y": 1
+                            "x": 74,
+                            "y": 0
                           },
                           {
-                            "x": 84,
-                            "y": 83
+                            "x": 74,
+                            "y": 88
                           },
                           {
                             "x": 0,
-                            "y": 83
+                            "y": 88
                           }
                         ]
                       ]
@@ -12418,7 +13808,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "semangka",
+          "name": "dua_lemon",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [
@@ -12446,7 +13836,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Group 18.png",
+                      "image": "Group 19 (3).png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -12462,19 +13852,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
+                            "x": 1,
                             "y": 0
                           },
                           {
-                            "x": 160,
+                            "x": 171,
                             "y": 0
                           },
                           {
-                            "x": 160,
+                            "x": 171,
                             "y": 223
                           },
                           {
-                            "x": 0,
+                            "x": 1,
                             "y": 223
                           }
                         ]
@@ -12813,7 +14203,7 @@
               "type": "Tween::TweenBehavior"
             }
           ],
-          "string": "Pengenalan konsep dasar. Benda memiliki berat yang jelas (misal:\n1kg, 2kg, 5kg). kamu hanya perlu mencocokkan total berat.",
+          "string": "Memperkenalkan berat relatif. kamu tidak tahu berat pasti sebuah benda, tapi bisa membandingkannya (misal: 1 nanas = 2 apel). Soal akan meminta pemain menyeimbangkan benda yang lebih berat.",
           "font": "Sprintura Demo.otf",
           "textAlignment": "left",
           "characterSize": 24,
@@ -12836,7 +14226,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Pengenalan konsep dasar. Benda memiliki berat yang jelas (misal:\n1kg, 2kg, 5kg). kamu hanya perlu mencocokkan total berat.",
+            "text": "Memperkenalkan berat relatif. kamu tidak tahu berat pasti sebuah benda, tapi bisa membandingkannya (misal: 1 nanas = 2 apel). Soal akan meminta pemain menyeimbangkan benda yang lebih berat.",
             "font": "Sprintura Demo.otf",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -13027,7 +14417,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "easy",
+          "name": "medium",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -13049,7 +14439,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Group (89).png",
+                      "image": "Group (92).png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -13069,16 +14459,829 @@
                             "y": 0
                           },
                           {
-                            "x": 226,
+                            "x": 312,
                             "y": 0
                           },
                           {
-                            "x": 226,
+                            "x": 312,
                             "y": 99
                           },
                           {
                             "x": 0,
                             "y": 99
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "kotak_settings",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 22 (4).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 886,
+                            "y": 0
+                          },
+                          {
+                            "x": 886,
+                            "y": 541
+                          },
+                          {
+                            "x": 0,
+                            "y": 541
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "menu",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 2.0247e-320
+            },
+            {
+              "name": "ButtonScaleTween",
+              "type": "ButtonStates::ButtonScaleTween",
+              "Scale": "Scale",
+              "ButtonFSM": "ButtonFSM",
+              "Tween": "Tween",
+              "IdleScale": 1,
+              "FocusedScale": 1.12,
+              "FadeInDuration": 0.1,
+              "FadeOutDuration": 0.2,
+              "PressedScale": 1,
+              "FadeInEasing": "easeInOutQuad",
+              "FadeOutEasing": "easeInOutQuad",
+              "PreviousState": "Idle"
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 20 (1).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 38,
+                            "y": 0
+                          },
+                          {
+                            "x": 350,
+                            "y": 0
+                          },
+                          {
+                            "x": 350,
+                            "y": 83
+                          },
+                          {
+                            "x": 38,
+                            "y": 83
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "suara",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 2.0247e-320
+            },
+            {
+              "name": "ButtonScaleTween",
+              "type": "ButtonStates::ButtonScaleTween",
+              "Scale": "Scale",
+              "ButtonFSM": "ButtonFSM",
+              "Tween": "Tween",
+              "IdleScale": 1,
+              "FocusedScale": 1.12,
+              "FadeInDuration": 0.1,
+              "FadeOutDuration": 0.2,
+              "PressedScale": 1,
+              "FadeInEasing": "easeInOutQuad",
+              "FadeOutEasing": "easeInOutQuad",
+              "PreviousState": "Idle"
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 21 (1).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 38,
+                            "y": 0
+                          },
+                          {
+                            "x": 350,
+                            "y": 0
+                          },
+                          {
+                            "x": 350,
+                            "y": 83
+                          },
+                          {
+                            "x": 38,
+                            "y": 83
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "silang",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 2.0247e-320
+            },
+            {
+              "name": "ButtonScaleTween",
+              "type": "ButtonStates::ButtonScaleTween",
+              "Scale": "Scale",
+              "ButtonFSM": "ButtonFSM",
+              "Tween": "Tween",
+              "IdleScale": 1,
+              "FocusedScale": 1.12,
+              "FadeInDuration": 0.1,
+              "FadeOutDuration": 0.2,
+              "PressedScale": 1,
+              "FadeInEasing": "easeInOutQuad",
+              "FadeOutEasing": "easeInOutQuad",
+              "PreviousState": "Idle"
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 1 (6).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 114,
+                            "y": 0
+                          },
+                          {
+                            "x": 114,
+                            "y": 113
+                          },
+                          {
+                            "x": 0,
+                            "y": 113
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "sfx",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 2.0247e-320
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group (91).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 153,
+                            "y": 0
+                          },
+                          {
+                            "x": 153,
+                            "y": 144
+                          },
+                          {
+                            "x": 0,
+                            "y": 144
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "off",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 22 (5).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 153,
+                            "y": 0
+                          },
+                          {
+                            "x": 153,
+                            "y": 144
+                          },
+                          {
+                            "x": 0,
+                            "y": 144
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "bgm",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 2.0247e-320
+            }
+          ],
+          "animations": [
+            {
+              "name": "on",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Vector (41).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 118,
+                            "y": 0
+                          },
+                          {
+                            "x": 118,
+                            "y": 152
+                          },
+                          {
+                            "x": 0,
+                            "y": 152
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "off",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 6 (2).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 118,
+                            "y": 0
+                          },
+                          {
+                            "x": 118,
+                            "y": 152
+                          },
+                          {
+                            "x": 0,
+                            "y": 152
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "kembali",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 2.0247e-320
+            },
+            {
+              "name": "ButtonScaleTween",
+              "type": "ButtonStates::ButtonScaleTween",
+              "Scale": "Scale",
+              "ButtonFSM": "ButtonFSM",
+              "Tween": "Tween",
+              "IdleScale": 1,
+              "FocusedScale": 1.12,
+              "FadeInDuration": 0.1,
+              "FadeOutDuration": 0.2,
+              "PressedScale": 1,
+              "FadeInEasing": "easeInOutQuad",
+              "FadeOutEasing": "easeInOutQuad",
+              "PreviousState": "Idle"
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 18 (3).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 2,
+                            "y": 0
+                          },
+                          {
+                            "x": 277,
+                            "y": 0
+                          },
+                          {
+                            "x": 277,
+                            "y": 59
+                          },
+                          {
+                            "x": 2,
+                            "y": 59
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "mati_bgm",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 2.0247e-320
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 19 (2).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 5,
+                            "y": 5
+                          },
+                          {
+                            "x": 131,
+                            "y": 5
+                          },
+                          {
+                            "x": 131,
+                            "y": 137
+                          },
+                          {
+                            "x": 5,
+                            "y": 137
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "mati_fsx",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 2.0247e-320
+            },
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Group 19 (2).png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 5,
+                            "y": 5
+                          },
+                          {
+                            "x": 131,
+                            "y": 5
+                          },
+                          {
+                            "x": 131,
+                            "y": 137
+                          },
+                          {
+                            "x": 5,
+                            "y": 137
                           }
                         ]
                       ]
@@ -13094,76 +15297,133 @@
         "folderName": "__ROOT",
         "children": [
           {
+            "folderName": "suara",
+            "children": [
+              {
+                "objectName": "sfx"
+              },
+              {
+                "objectName": "bgm"
+              },
+              {
+                "objectName": "kembali"
+              },
+              {
+                "objectName": "mati_bgm"
+              },
+              {
+                "objectName": "mati_fsx"
+              }
+            ]
+          },
+          {
+            "folderName": "settings",
+            "children": [
+              {
+                "objectName": "kotak_settings"
+              },
+              {
+                "objectName": "menu"
+              },
+              {
+                "objectName": "suara"
+              },
+              {
+                "objectName": "silang"
+              }
+            ]
+          },
+          {
+            "folderName": "timbangan",
+            "children": [
+              {
+                "objectName": "badan_timbangan"
+              },
+              {
+                "objectName": "_10kg"
+              },
+              {
+                "objectName": "gantungannya"
+              },
+              {
+                "objectName": "dua_lemon"
+              },
+              {
+                "objectName": "timbangan_atas"
+              }
+            ]
+          },
+          {
+            "folderName": "buah",
+            "children": [
+              {
+                "objectName": "jeruk"
+              },
+              {
+                "objectName": "mangga"
+              },
+              {
+                "objectName": "apel"
+              }
+            ]
+          },
+          {
+            "folderName": "teks",
+            "children": [
+              {
+                "objectName": "angka_lemon"
+              },
+              {
+                "objectName": "angka_jambu"
+              },
+              {
+                "objectName": "isinya"
+              },
+              {
+                "objectName": "kg"
+              },
+              {
+                "objectName": "teks"
+              },
+              {
+                "objectName": "angka_nanas"
+              }
+            ]
+          },
+          {
+            "folderName": "tombol",
+            "children": [
+              {
+                "objectName": "reset"
+              },
+              {
+                "objectName": "pengaturan"
+              }
+            ]
+          },
+          {
             "objectName": "bg"
-          },
-          {
-            "objectName": "badan_timbangan"
-          },
-          {
-            "objectName": "pengaturan"
-          },
-          {
-            "objectName": "reset"
-          },
-          {
-            "objectName": "lemari"
-          },
-          {
-            "objectName": "kotak_merah"
-          },
-          {
-            "objectName": "nanas"
-          },
-          {
-            "objectName": "jambu"
-          },
-          {
-            "objectName": "lemon"
-          },
-          {
-            "objectName": "opacity"
           },
           {
             "objectName": "koin"
           },
           {
-            "objectName": "timbangan_atas"
+            "objectName": "medium"
           },
           {
-            "objectName": "gantungannya"
+            "objectName": "kotak_merah"
           },
           {
-            "objectName": "semangka"
+            "objectName": "lemari"
           },
           {
-            "objectName": "_10kg"
-          },
-          {
-            "objectName": "angka_nanas"
-          },
-          {
-            "objectName": "teks"
-          },
-          {
-            "objectName": "kg"
-          },
-          {
-            "objectName": "isinya"
+            "objectName": "opacity"
           },
           {
             "objectName": "kotak_atas"
           },
           {
-            "objectName": "angka_jambu"
-          },
-          {
-            "objectName": "angka_lemon"
-          },
-          {
             "objectName": "koto_hitam"
-          },
-          {
-            "objectName": "easy"
           }
         ]
       },
@@ -13183,12 +15443,71 @@
           "actions": [
             {
               "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"kooin\""
+              ]
+            },
+            {
+              "type": {
                 "value": "EnableLayerEffect"
               },
               "parameters": [
                 "",
                 "",
                 "\"blur\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "menu",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "suara",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "sfx",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "kembali",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "bgm",
+                "ButtonFSM",
                 ""
               ]
             },
@@ -13247,7 +15566,7 @@
                 "value": "ActivateBehavior"
               },
               "parameters": [
-                "nanas",
+                "apel",
                 "Draggable",
                 ""
               ]
@@ -13257,7 +15576,17 @@
                 "value": "ActivateBehavior"
               },
               "parameters": [
-                "jambu",
+                "jeruk",
+                "Draggable",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "mangga",
                 "Draggable",
                 ""
               ]
@@ -13298,7 +15627,7 @@
                 "isinya",
                 "Tween",
                 "\"ntahlah\"",
-                "65",
+                "58",
                 "\"linear\"",
                 "0.8",
                 ""
@@ -13323,7 +15652,7 @@
                 "value": "EffectCapability::EffectBehavior::EnableEffect"
               },
               "parameters": [
-                "nanas",
+                "apel",
                 "Effect",
                 "\"abu-abu\"",
                 ""
@@ -13334,7 +15663,7 @@
                 "value": "EffectCapability::EffectBehavior::EnableEffect"
               },
               "parameters": [
-                "jambu",
+                "jeruk",
                 "Effect",
                 "\"abu-abu\"",
                 ""
@@ -13345,7 +15674,7 @@
                 "value": "EffectCapability::EffectBehavior::EnableEffect"
               },
               "parameters": [
-                "lemon",
+                "mangga",
                 "Effect",
                 "\"abu-abu\"",
                 ""
@@ -13356,10 +15685,10 @@
                 "value": "SetNumberObjectVariable"
               },
               "parameters": [
-                "nanas",
+                "apel",
                 "y",
                 "=",
-                "nanas.Y()"
+                "apel.Y()"
               ]
             },
             {
@@ -13367,10 +15696,10 @@
                 "value": "SetNumberObjectVariable"
               },
               "parameters": [
-                "nanas",
+                "apel",
                 "x",
                 "=",
-                "nanas.X()"
+                "apel.X()"
               ]
             },
             {
@@ -13378,10 +15707,10 @@
                 "value": "SetNumberObjectVariable"
               },
               "parameters": [
-                "jambu",
+                "jeruk",
                 "y",
                 "=",
-                "jambu.Y()"
+                "jeruk.Y()"
               ]
             },
             {
@@ -13389,10 +15718,10 @@
                 "value": "SetNumberObjectVariable"
               },
               "parameters": [
-                "jambu",
+                "jeruk",
                 "x",
                 "=",
-                "jambu.X()"
+                "jeruk.X()"
               ]
             },
             {
@@ -13400,10 +15729,10 @@
                 "value": "SetNumberObjectVariable"
               },
               "parameters": [
-                "lemon",
+                "mangga",
                 "y",
                 "=",
-                "lemon.Y()"
+                "mangga.Y()"
               ]
             },
             {
@@ -13411,10 +15740,10 @@
                 "value": "SetNumberObjectVariable"
               },
               "parameters": [
-                "lemon",
+                "mangga",
                 "x",
                 "=",
-                "lemon.X()"
+                "mangga.X()"
               ]
             },
             {
@@ -13422,10 +15751,10 @@
                 "value": "SetNumberObjectVariable"
               },
               "parameters": [
-                "semangka",
+                "dua_lemon",
                 "y",
                 "=",
-                "semangka.Y()"
+                "dua_lemon.Y()"
               ]
             },
             {
@@ -13563,7 +15892,7 @@
                 "value": "ActivateBehavior"
               },
               "parameters": [
-                "nanas",
+                "apel",
                 "Draggable",
                 "yes"
               ]
@@ -13573,7 +15902,7 @@
                 "value": "ActivateBehavior"
               },
               "parameters": [
-                "jambu",
+                "jeruk",
                 "Draggable",
                 "yes"
               ]
@@ -13583,9 +15912,59 @@
                 "value": "ActivateBehavior"
               },
               "parameters": [
-                "lemon",
+                "mangga",
                 "Draggable",
                 "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "menu",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "suara",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "sfx",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "kembali",
+                "ButtonFSM",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "bgm",
+                "ButtonFSM",
+                ""
               ]
             }
           ]
@@ -13622,21 +16001,13 @@
           "actions": [
             {
               "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "0.1"
-              ]
-            },
-            {
-              "type": {
                 "value": "TextContainerCapability::TextContainerBehavior::SetValue"
               },
               "parameters": [
                 "isinya",
                 "Text",
                 "=",
-                "\"Pengenalan konsep dasar. Benda memiliki berat yang jelas (misal:\n1kg, 2kg, 5kg). kamu hanya perlu mencocokkan total berat.\""
+                "\"Memperkenalkan berat relatif. kamu tidak tahu berat pasti sebuah benda, tapi bisa membandingkannya (misal: 1 nanas = 2 apel). Soal akan meminta pemain menyeimbangkan benda yang lebih berat.\""
               ]
             },
             {
@@ -13666,6 +16037,16 @@
                 "True",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "isinya",
+                "AutoTyping",
+                "yes"
+              ]
             }
           ]
         },
@@ -13678,6 +16059,77 @@
               },
               "parameters": [
                 "teksssssssssssss",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "isinya",
+                "Text",
+                "=",
+                "\"Di timbangan kiri ada 2 buah lemon Apa yang harus diletakkan di timbangan kanan agar seimbang?\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "isinya",
+                "AutoTyping",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "stop_teks",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "stop_teks",
                 "True",
                 ""
               ]
@@ -13746,130 +16198,138 @@
                 "value": "Wait"
               },
               "parameters": [
-                "0.01"
+                "0.2"
               ]
-            },
+            }
+          ],
+          "events": [
             {
-              "type": {
-                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
-              },
-              "parameters": [
-                "easy",
-                "Tween",
-                "\"hidup\"",
-                "311",
-                "\"easeInCubic\"",
-                "0.8",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "1.5"
-              ]
-            },
-            {
-              "type": {
-                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
-              },
-              "parameters": [
-                "easy",
-                "Tween",
-                "\"hidup\"",
-                "750",
-                "\"easeOutCubic\"",
-                "0.5",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "pengaturan",
-                "ButtonFSM",
-                "yes"
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "reset",
-                "ButtonFSM",
-                "yes"
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "reset",
-                "ButtonScaleTween",
-                "yes"
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "pengaturan",
-                "ButtonScaleTween",
-                "yes"
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "nanas",
-                "Draggable",
-                "yes"
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "jambu",
-                "Draggable",
-                "yes"
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "lemon",
-                "Draggable",
-                "yes"
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "0.5"
-              ]
-            },
-            {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "easy",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "medium",
+                    "Tween",
+                    "\"hidup\"",
+                    "311",
+                    "\"easeInCubic\"",
+                    "0.8",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "medium",
+                    "Tween",
+                    "\"hidup\"",
+                    "750",
+                    "\"easeOutCubic\"",
+                    "0.5",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "medium",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "jeruk",
+                    "Draggable",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "mangga",
+                    "Draggable",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "apel",
+                    "Draggable",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "pengaturan",
+                    "ButtonScaleTween",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "reset",
+                    "ButtonScaleTween",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "reset",
+                    "ButtonFSM",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "pengaturan",
+                    "ButtonFSM",
+                    "yes"
+                  ]
+                }
               ]
             }
           ]
@@ -13892,7 +16352,7 @@
                     "value": "DraggableBehavior::Dragged"
                   },
                   "parameters": [
-                    "jambu",
+                    "jeruk",
                     "Draggable"
                   ]
                 }
@@ -13903,7 +16363,7 @@
                     "value": "ChangePlan"
                   },
                   "parameters": [
-                    "jambu",
+                    "jeruk",
                     "=",
                     "100"
                   ]
@@ -13918,7 +16378,7 @@
                         "value": "BooleanObjectVariable"
                       },
                       "parameters": [
-                        "jambu",
+                        "jeruk",
                         "jambu",
                         "True",
                         ""
@@ -13937,7 +16397,7 @@
                         "value": "SetBooleanObjectVariable"
                       },
                       "parameters": [
-                        "jambu",
+                        "jeruk",
                         "jambu",
                         "False",
                         ""
@@ -13954,7 +16414,7 @@
                           },
                           "parameters": [
                             "",
-                            "jambu",
+                            "jeruk",
                             "<",
                             "4"
                           ]
@@ -13967,9 +16427,9 @@
                           },
                           "parameters": [
                             "",
-                            "jambu",
-                            "jambu.x",
-                            "jambu.y",
+                            "jeruk",
+                            "jeruk.x",
+                            "jeruk.y",
                             ""
                           ]
                         },
@@ -13978,10 +16438,10 @@
                             "value": "SetNumberObjectVariable"
                           },
                           "parameters": [
-                            "jambu",
+                            "jeruk",
                             "y",
                             "=",
-                            "jambu.Y()"
+                            "jeruk.Y()"
                           ]
                         },
                         {
@@ -13989,10 +16449,10 @@
                             "value": "SetNumberObjectVariable"
                           },
                           "parameters": [
-                            "jambu",
+                            "jeruk",
                             "x",
                             "=",
-                            "jambu.X()"
+                            "jeruk.X()"
                           ]
                         },
                         {
@@ -14000,7 +16460,7 @@
                             "value": "EffectCapability::EffectBehavior::EnableEffect"
                           },
                           "parameters": [
-                            "jambu",
+                            "jeruk",
                             "Effect",
                             "\"abu-abu\"",
                             ""
@@ -14017,7 +16477,7 @@
                           },
                           "parameters": [
                             "",
-                            "jambu",
+                            "jeruk",
                             "=",
                             "4"
                           ]
@@ -14030,9 +16490,9 @@
                           },
                           "parameters": [
                             "",
-                            "jambu",
-                            "jambu.x",
-                            "jambu.y",
+                            "jeruk",
+                            "jeruk.x",
+                            "jeruk.y",
                             ""
                           ]
                         },
@@ -14041,10 +16501,10 @@
                             "value": "SetNumberObjectVariable"
                           },
                           "parameters": [
-                            "jambu",
+                            "jeruk",
                             "y",
                             "=",
-                            "jambu.Y()"
+                            "jeruk.Y()"
                           ]
                         },
                         {
@@ -14052,10 +16512,10 @@
                             "value": "SetNumberObjectVariable"
                           },
                           "parameters": [
-                            "jambu",
+                            "jeruk",
                             "x",
                             "=",
-                            "jambu.X()"
+                            "jeruk.X()"
                           ]
                         },
                         {
@@ -14063,7 +16523,7 @@
                             "value": "SetBooleanObjectVariable"
                           },
                           "parameters": [
-                            "jambu",
+                            "jeruk",
                             "jambu",
                             "False",
                             ""
@@ -14085,7 +16545,7 @@
                             "value": "ActivateBehavior"
                           },
                           "parameters": [
-                            "jambu",
+                            "jeruk",
                             "Draggable",
                             ""
                           ]
@@ -14095,7 +16555,7 @@
                             "value": "ChangePlan"
                           },
                           "parameters": [
-                            "jambu",
+                            "jeruk",
                             "=",
                             "7"
                           ]
@@ -14114,7 +16574,7 @@
                     "value": "DraggableBehavior::Dropped"
                   },
                   "parameters": [
-                    "jambu",
+                    "jeruk",
                     "Draggable"
                   ]
                 }
@@ -14125,7 +16585,7 @@
                     "value": "ChangePlan"
                   },
                   "parameters": [
-                    "jambu",
+                    "jeruk",
                     "=",
                     "50"
                   ]
@@ -14140,7 +16600,7 @@
                         "value": "CollisionNP"
                       },
                       "parameters": [
-                        "jambu",
+                        "jeruk",
                         "gantungannya",
                         "",
                         "",
@@ -14154,7 +16614,7 @@
                         "value": "MettreX"
                       },
                       "parameters": [
-                        "jambu",
+                        "jeruk",
                         "=",
                         "gantungannya.X()+46"
                       ]
@@ -14164,7 +16624,7 @@
                         "value": "MettreY"
                       },
                       "parameters": [
-                        "jambu",
+                        "jeruk",
                         "=",
                         "gantungannya.Y()+111"
                       ]
@@ -14190,7 +16650,7 @@
                         "value": "CollisionNP"
                       },
                       "parameters": [
-                        "jambu",
+                        "jeruk",
                         "gantungannya",
                         "",
                         "",
@@ -14210,9 +16670,9 @@
                         "value": "MettreY"
                       },
                       "parameters": [
-                        "jambu",
+                        "jeruk",
                         "=",
-                        "jambu.x"
+                        "jeruk.x"
                       ]
                     },
                     {
@@ -14220,9 +16680,9 @@
                         "value": "MettreX"
                       },
                       "parameters": [
-                        "jambu",
+                        "jeruk",
                         "=",
-                        "jambu.y"
+                        "jeruk.y"
                       ]
                     }
                   ]
@@ -14237,7 +16697,7 @@
                     "value": "CollisionNP"
                   },
                   "parameters": [
-                    "jambu",
+                    "jeruk",
                     "gantungannya",
                     "",
                     "",
@@ -14251,7 +16711,7 @@
                     "value": "ActivateBehavior"
                   },
                   "parameters": [
-                    "jambu",
+                    "jeruk",
                     "Draggable",
                     ""
                   ]
@@ -14261,10 +16721,10 @@
                     "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
-                    "jambu",
+                    "jeruk",
                     "nominal",
                     "=",
-                    "PickedInstancesCount(jambu)"
+                    "PickedInstancesCount(jeruk)"
                   ]
                 }
               ]
@@ -14290,7 +16750,7 @@
                     "value": "DraggableBehavior::Dragged"
                   },
                   "parameters": [
-                    "nanas",
+                    "apel",
                     "Draggable"
                   ]
                 }
@@ -14301,7 +16761,7 @@
                     "value": "ChangePlan"
                   },
                   "parameters": [
-                    "nanas",
+                    "apel",
                     "=",
                     "100"
                   ]
@@ -14316,7 +16776,7 @@
                         "value": "BooleanObjectVariable"
                       },
                       "parameters": [
-                        "nanas",
+                        "apel",
                         "nanas",
                         "True",
                         ""
@@ -14335,7 +16795,7 @@
                         "value": "SetBooleanObjectVariable"
                       },
                       "parameters": [
-                        "nanas",
+                        "apel",
                         "nanas",
                         "False",
                         ""
@@ -14352,7 +16812,7 @@
                           },
                           "parameters": [
                             "",
-                            "nanas",
+                            "apel",
                             "<",
                             "4"
                           ]
@@ -14365,9 +16825,9 @@
                           },
                           "parameters": [
                             "",
-                            "nanas",
-                            "nanas.x",
-                            "nanas.y",
+                            "apel",
+                            "apel.x",
+                            "apel.y",
                             ""
                           ]
                         },
@@ -14376,10 +16836,10 @@
                             "value": "SetNumberObjectVariable"
                           },
                           "parameters": [
-                            "nanas",
+                            "apel",
                             "y",
                             "=",
-                            "nanas.Y()"
+                            "apel.Y()"
                           ]
                         },
                         {
@@ -14387,10 +16847,10 @@
                             "value": "SetNumberObjectVariable"
                           },
                           "parameters": [
-                            "nanas",
+                            "apel",
                             "x",
                             "=",
-                            "nanas.X()"
+                            "apel.X()"
                           ]
                         },
                         {
@@ -14398,7 +16858,7 @@
                             "value": "EffectCapability::EffectBehavior::EnableEffect"
                           },
                           "parameters": [
-                            "nanas",
+                            "apel",
                             "Effect",
                             "\"abu-abu\"",
                             ""
@@ -14415,7 +16875,7 @@
                           },
                           "parameters": [
                             "",
-                            "nanas",
+                            "apel",
                             "=",
                             "4"
                           ]
@@ -14428,9 +16888,9 @@
                           },
                           "parameters": [
                             "",
-                            "nanas",
-                            "nanas.x",
-                            "nanas.y",
+                            "apel",
+                            "apel.x",
+                            "apel.y",
                             ""
                           ]
                         },
@@ -14439,10 +16899,10 @@
                             "value": "SetNumberObjectVariable"
                           },
                           "parameters": [
-                            "nanas",
+                            "apel",
                             "y",
                             "=",
-                            "nanas.Y()"
+                            "apel.Y()"
                           ]
                         },
                         {
@@ -14450,10 +16910,10 @@
                             "value": "SetNumberObjectVariable"
                           },
                           "parameters": [
-                            "nanas",
+                            "apel",
                             "x",
                             "=",
-                            "nanas.X()"
+                            "apel.X()"
                           ]
                         },
                         {
@@ -14461,7 +16921,7 @@
                             "value": "SetBooleanObjectVariable"
                           },
                           "parameters": [
-                            "nanas",
+                            "apel",
                             "nanas",
                             "False",
                             ""
@@ -14472,7 +16932,7 @@
                             "value": "EffectCapability::EffectBehavior::EnableEffect"
                           },
                           "parameters": [
-                            "nanas",
+                            "apel",
                             "Effect",
                             "\"abu-abu\"",
                             "yes"
@@ -14483,7 +16943,7 @@
                             "value": "ActivateBehavior"
                           },
                           "parameters": [
-                            "nanas",
+                            "apel",
                             "Draggable",
                             ""
                           ]
@@ -14493,7 +16953,7 @@
                             "value": "ChangePlan"
                           },
                           "parameters": [
-                            "nanas",
+                            "apel",
                             "=",
                             "7"
                           ]
@@ -14512,7 +16972,7 @@
                     "value": "DraggableBehavior::Dropped"
                   },
                   "parameters": [
-                    "nanas",
+                    "apel",
                     "Draggable"
                   ]
                 }
@@ -14523,7 +16983,7 @@
                     "value": "ChangePlan"
                   },
                   "parameters": [
-                    "nanas",
+                    "apel",
                     "=",
                     "50"
                   ]
@@ -14538,7 +16998,7 @@
                         "value": "CollisionNP"
                       },
                       "parameters": [
-                        "nanas",
+                        "apel",
                         "gantungannya",
                         "",
                         "",
@@ -14552,7 +17012,7 @@
                         "value": "MettreX"
                       },
                       "parameters": [
-                        "nanas",
+                        "apel",
                         "=",
                         "gantungannya.X()+36"
                       ]
@@ -14562,7 +17022,7 @@
                         "value": "MettreY"
                       },
                       "parameters": [
-                        "nanas",
+                        "apel",
                         "=",
                         "gantungannya.Y()+89"
                       ]
@@ -14588,7 +17048,7 @@
                         "value": "CollisionNP"
                       },
                       "parameters": [
-                        "nanas",
+                        "apel",
                         "gantungannya",
                         "",
                         "",
@@ -14608,9 +17068,9 @@
                         "value": "MettreY"
                       },
                       "parameters": [
-                        "nanas",
+                        "apel",
                         "=",
-                        "nanas.x"
+                        "apel.x"
                       ]
                     },
                     {
@@ -14618,9 +17078,9 @@
                         "value": "MettreX"
                       },
                       "parameters": [
-                        "nanas",
+                        "apel",
                         "=",
-                        "nanas.y"
+                        "apel.y"
                       ]
                     }
                   ]
@@ -14635,7 +17095,7 @@
                     "value": "CollisionNP"
                   },
                   "parameters": [
-                    "nanas",
+                    "apel",
                     "gantungannya",
                     "",
                     "",
@@ -14649,7 +17109,7 @@
                     "value": "ActivateBehavior"
                   },
                   "parameters": [
-                    "nanas",
+                    "apel",
                     "Draggable",
                     ""
                   ]
@@ -14659,10 +17119,10 @@
                     "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
-                    "nanas",
+                    "apel",
                     "nominal_nanas",
                     "=",
-                    "PickedInstancesCount(nanas)"
+                    "PickedInstancesCount(apel)"
                   ]
                 }
               ]
@@ -14688,7 +17148,7 @@
                     "value": "DraggableBehavior::Dragged"
                   },
                   "parameters": [
-                    "lemon",
+                    "mangga",
                     "Draggable"
                   ]
                 }
@@ -14699,7 +17159,7 @@
                     "value": "ChangePlan"
                   },
                   "parameters": [
-                    "lemon",
+                    "mangga",
                     "=",
                     "100"
                   ]
@@ -14714,7 +17174,7 @@
                         "value": "BooleanObjectVariable"
                       },
                       "parameters": [
-                        "lemon",
+                        "mangga",
                         "lemon",
                         "True",
                         ""
@@ -14733,7 +17193,7 @@
                         "value": "SetBooleanObjectVariable"
                       },
                       "parameters": [
-                        "lemon",
+                        "mangga",
                         "lemon",
                         "False",
                         ""
@@ -14750,7 +17210,7 @@
                           },
                           "parameters": [
                             "",
-                            "lemon",
+                            "mangga",
                             "<",
                             "4"
                           ]
@@ -14763,9 +17223,9 @@
                           },
                           "parameters": [
                             "",
-                            "lemon",
-                            "lemon.x",
-                            "lemon.y",
+                            "mangga",
+                            "mangga.x",
+                            "mangga.y",
                             ""
                           ]
                         },
@@ -14774,10 +17234,10 @@
                             "value": "SetNumberObjectVariable"
                           },
                           "parameters": [
-                            "lemon",
+                            "mangga",
                             "y",
                             "=",
-                            "lemon.Y()"
+                            "mangga.Y()"
                           ]
                         },
                         {
@@ -14785,10 +17245,10 @@
                             "value": "SetNumberObjectVariable"
                           },
                           "parameters": [
-                            "lemon",
+                            "mangga",
                             "x",
                             "=",
-                            "lemon.X()"
+                            "mangga.X()"
                           ]
                         },
                         {
@@ -14796,7 +17256,7 @@
                             "value": "EffectCapability::EffectBehavior::EnableEffect"
                           },
                           "parameters": [
-                            "lemon",
+                            "mangga",
                             "Effect",
                             "\"abu-abu\"",
                             ""
@@ -14813,7 +17273,7 @@
                           },
                           "parameters": [
                             "",
-                            "lemon",
+                            "mangga",
                             "=",
                             "4"
                           ]
@@ -14826,9 +17286,9 @@
                           },
                           "parameters": [
                             "",
-                            "lemon",
-                            "lemon.x",
-                            "lemon.y",
+                            "mangga",
+                            "mangga.x",
+                            "mangga.y",
                             ""
                           ]
                         },
@@ -14837,10 +17297,10 @@
                             "value": "SetNumberObjectVariable"
                           },
                           "parameters": [
-                            "lemon",
+                            "mangga",
                             "y",
                             "=",
-                            "lemon.Y()"
+                            "mangga.Y()"
                           ]
                         },
                         {
@@ -14848,10 +17308,10 @@
                             "value": "SetNumberObjectVariable"
                           },
                           "parameters": [
-                            "lemon",
+                            "mangga",
                             "x",
                             "=",
-                            "lemon.X()"
+                            "mangga.X()"
                           ]
                         },
                         {
@@ -14859,7 +17319,7 @@
                             "value": "SetBooleanObjectVariable"
                           },
                           "parameters": [
-                            "lemon",
+                            "mangga",
                             "lemon",
                             "False",
                             ""
@@ -14870,7 +17330,7 @@
                             "value": "EffectCapability::EffectBehavior::EnableEffect"
                           },
                           "parameters": [
-                            "lemon",
+                            "mangga",
                             "Effect",
                             "\"abu-abu\"",
                             "yes"
@@ -14881,7 +17341,7 @@
                             "value": "ActivateBehavior"
                           },
                           "parameters": [
-                            "lemon",
+                            "mangga",
                             "Draggable",
                             ""
                           ]
@@ -14891,7 +17351,7 @@
                             "value": "ChangePlan"
                           },
                           "parameters": [
-                            "lemon",
+                            "mangga",
                             "=",
                             "7"
                           ]
@@ -14910,7 +17370,7 @@
                     "value": "DraggableBehavior::Dropped"
                   },
                   "parameters": [
-                    "lemon",
+                    "mangga",
                     "Draggable"
                   ]
                 }
@@ -14921,7 +17381,7 @@
                     "value": "ChangePlan"
                   },
                   "parameters": [
-                    "lemon",
+                    "mangga",
                     "=",
                     "50"
                   ]
@@ -14936,7 +17396,7 @@
                         "value": "CollisionNP"
                       },
                       "parameters": [
-                        "lemon",
+                        "mangga",
                         "gantungannya",
                         "",
                         "",
@@ -14950,7 +17410,7 @@
                         "value": "MettreX"
                       },
                       "parameters": [
-                        "lemon",
+                        "mangga",
                         "=",
                         "gantungannya.X()+37"
                       ]
@@ -14960,7 +17420,7 @@
                         "value": "MettreY"
                       },
                       "parameters": [
-                        "lemon",
+                        "mangga",
                         "=",
                         "gantungannya.Y()+127"
                       ]
@@ -14986,7 +17446,7 @@
                         "value": "CollisionNP"
                       },
                       "parameters": [
-                        "lemon",
+                        "mangga",
                         "gantungannya",
                         "",
                         "",
@@ -15006,9 +17466,9 @@
                         "value": "MettreY"
                       },
                       "parameters": [
-                        "lemon",
+                        "mangga",
                         "=",
-                        "lemon.x"
+                        "mangga.x"
                       ]
                     },
                     {
@@ -15016,9 +17476,9 @@
                         "value": "MettreX"
                       },
                       "parameters": [
-                        "lemon",
+                        "mangga",
                         "=",
-                        "lemon.y"
+                        "mangga.y"
                       ]
                     }
                   ]
@@ -15033,7 +17493,7 @@
                     "value": "CollisionNP"
                   },
                   "parameters": [
-                    "lemon",
+                    "mangga",
                     "gantungannya",
                     "",
                     "",
@@ -15047,7 +17507,7 @@
                     "value": "ActivateBehavior"
                   },
                   "parameters": [
-                    "lemon",
+                    "mangga",
                     "Draggable",
                     ""
                   ]
@@ -15057,10 +17517,10 @@
                     "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
-                    "lemon",
+                    "mangga",
                     "nominal",
                     "=",
-                    "PickedInstancesCount(lemon)"
+                    "PickedInstancesCount(mangga)"
                   ]
                 }
               ]
@@ -15086,7 +17546,7 @@
                     "value": "NumberObjectVariable"
                   },
                   "parameters": [
-                    "lemon",
+                    "mangga",
                     "nominal",
                     "=",
                     "1"
@@ -15116,10 +17576,10 @@
                     "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
-                    "lemon",
+                    "mangga",
                     "berat",
                     "=",
-                    "lemon.berat+2"
+                    "mangga.berat + 2"
                   ]
                 }
               ]
@@ -15132,7 +17592,7 @@
                     "value": "NumberObjectVariable"
                   },
                   "parameters": [
-                    "lemon",
+                    "mangga",
                     "nominal",
                     "=",
                     "2"
@@ -15162,10 +17622,10 @@
                     "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
-                    "lemon",
+                    "mangga",
                     "berat",
                     "=",
-                    "lemon.berat+2"
+                    "mangga.berat + 2"
                   ]
                 }
               ]
@@ -15178,7 +17638,7 @@
                     "value": "NumberObjectVariable"
                   },
                   "parameters": [
-                    "lemon",
+                    "mangga",
                     "nominal",
                     "=",
                     "3"
@@ -15208,10 +17668,10 @@
                     "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
-                    "lemon",
+                    "mangga",
                     "berat",
                     "=",
-                    "lemon.berat+2"
+                    "mangga.berat + 2"
                   ]
                 }
               ]
@@ -15224,7 +17684,7 @@
                     "value": "NumberObjectVariable"
                   },
                   "parameters": [
-                    "jambu",
+                    "jeruk",
                     "nominal",
                     "=",
                     "1"
@@ -15254,10 +17714,10 @@
                     "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
-                    "jambu",
+                    "jeruk",
                     "berat",
                     "=",
-                    "jambu.berat+3"
+                    "jeruk.berat + 3"
                   ]
                 }
               ]
@@ -15270,7 +17730,7 @@
                     "value": "NumberObjectVariable"
                   },
                   "parameters": [
-                    "jambu",
+                    "jeruk",
                     "nominal",
                     "=",
                     "2"
@@ -15300,10 +17760,10 @@
                     "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
-                    "jambu",
+                    "jeruk",
                     "berat",
                     "=",
-                    "jambu.berat+3"
+                    "jeruk.berat + 3"
                   ]
                 }
               ]
@@ -15316,7 +17776,7 @@
                     "value": "NumberObjectVariable"
                   },
                   "parameters": [
-                    "jambu",
+                    "jeruk",
                     "nominal",
                     "=",
                     "3"
@@ -15346,10 +17806,10 @@
                     "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
-                    "jambu",
+                    "jeruk",
                     "berat",
                     "=",
-                    "jambu.berat+3"
+                    "jeruk.berat + 3"
                   ]
                 }
               ]
@@ -15362,7 +17822,7 @@
                     "value": "NumberObjectVariable"
                   },
                   "parameters": [
-                    "nanas",
+                    "apel",
                     "nominal_nanas",
                     "=",
                     "1"
@@ -15392,10 +17852,10 @@
                     "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
-                    "nanas",
+                    "apel",
                     "berat",
                     "=",
-                    "nanas.berat+5"
+                    "apel.berat + 5"
                   ]
                 }
               ]
@@ -15408,7 +17868,7 @@
                     "value": "NumberObjectVariable"
                   },
                   "parameters": [
-                    "nanas",
+                    "apel",
                     "nominal_nanas",
                     "=",
                     "2"
@@ -15438,10 +17898,10 @@
                     "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
-                    "nanas",
+                    "apel",
                     "berat",
                     "=",
-                    "nanas.berat+5"
+                    "apel.berat + 5"
                   ]
                 }
               ]
@@ -15454,7 +17914,7 @@
                     "value": "NumberObjectVariable"
                   },
                   "parameters": [
-                    "nanas",
+                    "apel",
                     "nominal_nanas",
                     "=",
                     "3"
@@ -15484,10 +17944,10 @@
                     "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
-                    "nanas",
+                    "apel",
                     "berat",
                     "=",
-                    "nanas.berat+5"
+                    "apel.berat + 5"
                   ]
                 }
               ]
@@ -15501,7 +17961,7 @@
           "colorR": 74,
           "creationTime": 0,
           "folded": true,
-          "name": "Tombol",
+          "name": "Pengaturan",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -15534,6 +17994,681 @@
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "pengaturan",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"settings\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "LayerVisible"
+                  },
+                  "parameters": [
+                    "",
+                    "\"settings\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "reset",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "pengaturan",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "reset",
+                    "ButtonScaleTween",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "pengaturan",
+                    "ButtonScaleTween",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "apel",
+                    "Draggable",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "jeruk",
+                    "Draggable",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "mangga",
+                    "Draggable",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "suara",
+                    "ButtonFSM",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "menu",
+                    "ButtonFSM",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "suara",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "layer",
+                    "=",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"settings\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"suara\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "kembali",
+                    "ButtonFSM",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "sfx",
+                    "ButtonFSM",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "bgm",
+                    "ButtonFSM",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "mati_fsx",
+                    "ButtonFSM",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "mati_bgm",
+                    "ButtonFSM",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "layer",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "menu",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ],
+              "actions": []
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "bgm",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "musik_bg",
+                    "Toggle",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "musik_bg",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                      },
+                      "parameters": [
+                        "bgm",
+                        "Animation",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "musik_bg",
+                        "False",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                      },
+                      "parameters": [
+                        "bgm",
+                        "Animation",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "sfx",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "sound_effect",
+                    "Toggle",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "sound_effect",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                      },
+                      "parameters": [
+                        "sfx",
+                        "Animation",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "sound_effect",
+                        "False",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                      },
+                      "parameters": [
+                        "sfx",
+                        "Animation",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "kembali",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "layer",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"settings\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"suara\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "sfx",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "bgm",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "mati_fsx",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "mati_bgm",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "layer",
+                    "False",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "silang",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"settings\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"suara\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "bgm",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "kembali",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "sfx",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "menu",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "suara",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "mangga",
+                    "Draggable",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "jeruk",
+                    "Draggable",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "apel",
+                    "Draggable",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "reset",
+                    "ButtonScaleTween",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "pengaturan",
+                    "ButtonScaleTween",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "reset",
+                    "ButtonFSM",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "pengaturan",
+                    "ButtonFSM",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
                 {
@@ -15543,7 +18678,7 @@
                   "parameters": [
                     "berat",
                     "=",
-                    "nanas.berat+jambu.berat+lemon.berat"
+                    "apel.berat + jeruk.berat + mangga.berat"
                   ]
                 }
               ]
@@ -15618,10 +18753,10 @@
                     "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
                   },
                   "parameters": [
-                    "semangka",
+                    "dua_lemon",
                     "Tween",
                     "\"smngk\"",
-                    "semangka.y-(2.5*berat)",
+                    "dua_lemon.y - (2.5 * berat)",
                     "\"linear\"",
                     "0.5",
                     ""
@@ -15661,6 +18796,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Winner",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -15687,6 +18823,23 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"kooin\""
+                  ]
+                },
                 {
                   "type": {
                     "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
@@ -15770,42 +18923,55 @@
                     "yes"
                   ]
                 }
-              ],
-              "events": [
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "MouseButtonFromTextReleased"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Left\""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetStringVariable"
-                      },
-                      "parameters": [
-                        "loadingke",
-                        "=",
-                        "\"Level 4\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Scene"
-                      },
-                      "parameters": [
-                        "",
-                        "\"loadingke\"",
-                        ""
-                      ]
-                    }
+                  "type": {
+                    "value": "LayerVisible"
+                  },
+                  "parameters": [
+                    "",
+                    "\"kooin\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Left\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "loadingke",
+                    "=",
+                    "\"Level 4\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"loadingke\"",
+                    ""
                   ]
                 }
               ]
@@ -15905,7 +19071,113 @@
           "isLocked": false,
           "name": "kooin",
           "renderingType": "",
-          "visibility": true,
+          "visibility": false,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "settings",
+          "renderingType": "",
+          "visibility": false,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "suara",
+          "renderingType": "",
+          "visibility": false,
           "cameras": [],
           "effects": [
             {
