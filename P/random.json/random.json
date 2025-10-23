@@ -1,0 +1,18 @@
+[
+    {
+        "buah_level": [
+            "jambu", "lemon", "nanas"
+        ]
+    },
+    {
+        "buah_level2": [
+            "mangga", "anggur", "pisang"
+        ]
+    },
+    {
+        "buah_level3": [
+            "anggur", "jeruk", "peach"
+        ]
+    }
+
+]
