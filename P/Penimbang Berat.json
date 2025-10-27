@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 243,
+    "build": 244,
     "major": 5,
     "minor": 5,
     "revision": 0
@@ -3728,22 +3728,22 @@
           "actions": [
             {
               "type": {
+                "value": "ReadStringFromStorage"
+              },
+              "parameters": [
+                "\"settings\"",
+                "\"audio\"",
+                "",
+                "temp"
+              ]
+            },
+            {
+              "type": {
                 "value": "JSONToVariableStructure2"
               },
               "parameters": [
                 "temp",
                 "settings"
-              ]
-            },
-            {
-              "type": {
-                "value": "ReadStringFromStorage"
-              },
-              "parameters": [
-                "\"audio\"",
-                "\"settings\"",
-                "",
-                "temp"
               ]
             },
             {
@@ -3950,6 +3950,18 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Setting"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3972,16 +3984,6 @@
                 "musik_bg",
                 "Toggle",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "settings.BGM",
-                "=",
-                "musik_bg"
               ]
             }
           ],
@@ -4014,6 +4016,28 @@
                 },
                 {
                   "type": {
+                    "value": "ModVolumeMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "=",
+                    "100"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVolumeMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "2",
+                    "=",
+                    "100"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "PlaySoundCanal"
                   },
                   "parameters": [
@@ -4023,6 +4047,16 @@
                     "",
                     "100",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"settings\"",
+                    "\"audio\"",
+                    "ToJSON(settings)"
                   ]
                 }
               ]
@@ -4044,6 +4078,39 @@
               "actions": [
                 {
                   "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                  },
+                  "parameters": [
+                    "bgm",
+                    "Animation",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVolumeMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVolumeMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "2",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "PlaySoundCanal"
                   },
                   "parameters": [
@@ -4057,31 +4124,12 @@
                 },
                 {
                   "type": {
-                    "value": "StopMusicCanal"
+                    "value": "EcrireFichierTxt"
                   },
                   "parameters": [
-                    "",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "StopMusicCanal"
-                  },
-                  "parameters": [
-                    "",
-                    "2"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
-                  },
-                  "parameters": [
-                    "bgm",
-                    "Animation",
-                    "=",
-                    "1"
+                    "\"settings\"",
+                    "\"audio\"",
+                    "ToJSON(settings)"
                   ]
                 }
               ]
@@ -4112,16 +4160,6 @@
                 "Toggle",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "settings.SFX",
-                "=",
-                "sound_effect"
-              ]
             }
           ],
           "events": [
@@ -4142,6 +4180,28 @@
               "actions": [
                 {
                   "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                  },
+                  "parameters": [
+                    "sfx",
+                    "Animation",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVolumeSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "3",
+                    "=",
+                    "100"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "PlaySoundCanal"
                   },
                   "parameters": [
@@ -4155,13 +4215,12 @@
                 },
                 {
                   "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                    "value": "EcrireFichierTxt"
                   },
                   "parameters": [
-                    "sfx",
-                    "Animation",
-                    "=",
-                    "0"
+                    "\"settings\"",
+                    "\"audio\"",
+                    "ToJSON(settings)"
                   ]
                 }
               ]
@@ -4183,28 +4242,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "PlaySoundCanal"
-                  },
-                  "parameters": [
-                    "",
-                    "Mute.wav",
-                    "3",
-                    "",
-                    "100",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "StopSoundCanal"
-                  },
-                  "parameters": [
-                    "",
-                    "3"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
                   },
                   "parameters": [
@@ -4212,6 +4249,27 @@
                     "Animation",
                     "=",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVolumeSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "3",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"settings\"",
+                    "\"audio\"",
+                    "ToJSON(settings)"
                   ]
                 }
               ]
@@ -5437,6 +5495,26 @@
           "actions": [
             {
               "type": {
+                "value": "ReadStringFromStorage"
+              },
+              "parameters": [
+                "\"settings\"",
+                "\"audio\"",
+                "",
+                "temp"
+              ]
+            },
+            {
+              "type": {
+                "value": "JSONToVariableStructure2"
+              },
+              "parameters": [
+                "temp",
+                "settings"
+              ]
+            },
+            {
+              "type": {
                 "value": "StopMusicCanal"
               },
               "parameters": [
@@ -5563,7 +5641,7 @@
           "colorR": 74,
           "creationTime": 0,
           "folded": true,
-          "name": "Awan",
+          "name": "Buah",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -9251,6 +9329,26 @@
           "actions": [
             {
               "type": {
+                "value": "ReadStringFromStorage"
+              },
+              "parameters": [
+                "\"settings\"",
+                "\"audio\"",
+                "",
+                "temp"
+              ]
+            },
+            {
+              "type": {
+                "value": "JSONToVariableStructure2"
+              },
+              "parameters": [
+                "temp",
+                "settings"
+              ]
+            },
+            {
+              "type": {
                 "value": "PlayMusicCanal"
               },
               "parameters": [
@@ -11648,7 +11746,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Pengaturan",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -12079,6 +12176,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -12102,16 +12200,6 @@
                     "Toggle",
                     ""
                   ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "settings.BGM",
-                    "=",
-                    "musik_bg"
-                  ]
                 }
               ],
               "events": [
@@ -12132,6 +12220,39 @@
                   "actions": [
                     {
                       "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                      },
+                      "parameters": [
+                        "bgm",
+                        "Animation",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVolumeMusicCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        "=",
+                        "100"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVolumeMusicCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "2",
+                        "=",
+                        "100"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "PlaySoundCanal"
                       },
                       "parameters": [
@@ -12145,13 +12266,12 @@
                     },
                     {
                       "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                        "value": "EcrireFichierTxt"
                       },
                       "parameters": [
-                        "bgm",
-                        "Animation",
-                        "=",
-                        "0"
+                        "\"settings\"",
+                        "\"audio\"",
+                        "ToJSON(settings)"
                       ]
                     }
                   ]
@@ -12173,6 +12293,39 @@
                   "actions": [
                     {
                       "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                      },
+                      "parameters": [
+                        "bgm",
+                        "Animation",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVolumeMusicCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "1",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVolumeMusicCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "2",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "PlaySoundCanal"
                       },
                       "parameters": [
@@ -12186,31 +12339,12 @@
                     },
                     {
                       "type": {
-                        "value": "StopMusicCanal"
+                        "value": "EcrireFichierTxt"
                       },
                       "parameters": [
-                        "",
-                        "2"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "StopMusicCanal"
-                      },
-                      "parameters": [
-                        "",
-                        "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
-                      },
-                      "parameters": [
-                        "bgm",
-                        "Animation",
-                        "=",
-                        "1"
+                        "\"settings\"",
+                        "\"audio\"",
+                        "ToJSON(settings)"
                       ]
                     }
                   ]
@@ -12218,6 +12352,153 @@
               ]
             },
             {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "musik_bg",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                  },
+                  "parameters": [
+                    "bgm",
+                    "Animation",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVolumeMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "=",
+                    "100"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVolumeMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "2",
+                    "=",
+                    "100"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Unmute.wav",
+                    "3",
+                    "",
+                    "100",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"settings\"",
+                    "\"audio\"",
+                    "ToJSON(settings)"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "musik_bg",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                  },
+                  "parameters": [
+                    "bgm",
+                    "Animation",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVolumeMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "1",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVolumeMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "2",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Mute.wav",
+                    "3",
+                    "",
+                    "100",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"settings\"",
+                    "\"audio\"",
+                    "ToJSON(settings)"
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -12241,16 +12522,6 @@
                     "Toggle",
                     ""
                   ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "settings.SFX",
-                    "=",
-                    "sound_effect"
-                  ]
                 }
               ],
               "events": [
@@ -12271,6 +12542,28 @@
                   "actions": [
                     {
                       "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                      },
+                      "parameters": [
+                        "sfx",
+                        "Animation",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVolumeSoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "3",
+                        "=",
+                        "100"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "PlaySoundCanal"
                       },
                       "parameters": [
@@ -12284,13 +12577,12 @@
                     },
                     {
                       "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                        "value": "EcrireFichierTxt"
                       },
                       "parameters": [
-                        "sfx",
-                        "Animation",
-                        "=",
-                        "0"
+                        "\"settings\"",
+                        "\"audio\"",
+                        "ToJSON(settings)"
                       ]
                     }
                   ]
@@ -12312,28 +12604,6 @@
                   "actions": [
                     {
                       "type": {
-                        "value": "PlaySoundCanal"
-                      },
-                      "parameters": [
-                        "",
-                        "Mute.wav",
-                        "3",
-                        "",
-                        "100",
-                        "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "StopSoundCanal"
-                      },
-                      "parameters": [
-                        "",
-                        "3"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
                       },
                       "parameters": [
@@ -12342,7 +12612,139 @@
                         "=",
                         "1"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVolumeSoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "3",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EcrireFichierTxt"
+                      },
+                      "parameters": [
+                        "\"settings\"",
+                        "\"audio\"",
+                        "ToJSON(settings)"
+                      ]
                     }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "sound_effect",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                  },
+                  "parameters": [
+                    "sfx",
+                    "Animation",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVolumeSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "3",
+                    "=",
+                    "100"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Unmute.wav",
+                    "3",
+                    "",
+                    "100",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"settings\"",
+                    "\"audio\"",
+                    "ToJSON(settings)"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "sound_effect",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                  },
+                  "parameters": [
+                    "sfx",
+                    "Animation",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVolumeSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "3",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"settings\"",
+                    "\"audio\"",
+                    "ToJSON(settings)"
                   ]
                 }
               ]
@@ -12451,6 +12853,16 @@
                     "layer",
                     "False",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"settings\"",
+                    "\"audio\"",
+                    "ToJSON(settings)"
                   ]
                 }
               ]
@@ -12620,6 +13032,16 @@
                     "ButtonFSM",
                     "yes"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"settings\"",
+                    "\"audio\"",
+                    "ToJSON(settings)"
+                  ]
                 }
               ]
             },
@@ -12664,6 +13086,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Timbangan",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -12764,6 +13187,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Winner",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -17088,6 +17512,26 @@
           "actions": [
             {
               "type": {
+                "value": "ReadStringFromStorage"
+              },
+              "parameters": [
+                "\"settings\"",
+                "\"audio\"",
+                "",
+                "temp"
+              ]
+            },
+            {
+              "type": {
+                "value": "JSONToVariableStructure2"
+              },
+              "parameters": [
+                "temp",
+                "settings"
+              ]
+            },
+            {
+              "type": {
                 "value": "PlayMusicCanal"
               },
               "parameters": [
@@ -19485,7 +19929,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Pengaturan",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -19950,7 +20393,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -19974,16 +20416,6 @@
                     "Toggle",
                     ""
                   ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "settings.BGM",
-                    "=",
-                    "musik_bg"
-                  ]
                 }
               ],
               "events": [
@@ -20002,6 +20434,16 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "settings.BGM",
+                        "=",
+                        "100"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "PlaySoundCanal"
@@ -20043,6 +20485,16 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "settings.BGM",
+                        "=",
+                        "0"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "PlaySoundCanal"
@@ -20090,7 +20542,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -20114,16 +20565,6 @@
                     "Toggle",
                     ""
                   ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "settings.SFX",
-                    "=",
-                    "sound_effect"
-                  ]
                 }
               ],
               "events": [
@@ -20142,6 +20583,16 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "settings.SFX",
+                        "=",
+                        "0"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "PlaySoundCanal"
@@ -20183,6 +20634,16 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "settings.SFX",
+                        "=",
+                        "100"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "PlaySoundCanal"
@@ -20245,6 +20706,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"settings\"",
+                    "\"audio\"",
+                    "ToJSON(settings)"
+                  ]
+                },
                 {
                   "type": {
                     "value": "PlaySoundCanal"
@@ -20343,6 +20814,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"settings\"",
+                    "\"audio\"",
+                    "ToJSON(settings)"
+                  ]
+                },
                 {
                   "type": {
                     "value": "PlaySoundCanal"
@@ -21326,8 +21807,8 @@
           "persistentUuid": "2a0cf432-71da-427b-9956-cd412687a444",
           "width": 0,
           "x": 0,
-          "y": 750,
-          "zOrder": 8,
+          "y": 0,
+          "zOrder": 80,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -24963,6 +25444,76 @@
           "actions": [
             {
               "type": {
+                "value": "ReadStringFromStorage"
+              },
+              "parameters": [
+                "\"settings\"",
+                "\"audio\"",
+                "",
+                "temp"
+              ]
+            },
+            {
+              "type": {
+                "value": "JSONToVariableStructure2"
+              },
+              "parameters": [
+                "temp",
+                "settings"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "settings.BGM",
+                "=",
+                "100"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "settings.BGM",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "settings.SFX",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "settings.SFX",
+                "=",
+                "100"
+              ]
+            },
+            {
+              "type": {
+                "value": "EcrireFichierTxt"
+              },
+              "parameters": [
+                "\"settings\"",
+                "\"audio\"",
+                "ToJSON(settings)"
+              ]
+            },
+            {
+              "type": {
                 "value": "PlayMusicCanal"
               },
               "parameters": [
@@ -27824,7 +28375,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -27848,16 +28398,6 @@
                     "Toggle",
                     ""
                   ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "settings.BGM",
-                    "=",
-                    "musik_bg"
-                  ]
                 }
               ],
               "events": [
@@ -27876,6 +28416,16 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "settings.BGM",
+                        "=",
+                        "100"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "PlaySoundCanal"
@@ -27917,6 +28467,16 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "settings.BGM",
+                        "=",
+                        "0"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "PlaySoundCanal"
@@ -27964,7 +28524,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -27988,16 +28547,6 @@
                     "Toggle",
                     ""
                   ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "settings.SFX",
-                    "=",
-                    "sound_effect"
-                  ]
                 }
               ],
               "events": [
@@ -28016,6 +28565,16 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "settings.SFX",
+                        "=",
+                        "0"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "PlaySoundCanal"
@@ -28057,6 +28616,16 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "settings.SFX",
+                        "=",
+                        "100"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "PlaySoundCanal"
@@ -28119,6 +28688,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"settings\"",
+                    "\"audio\"",
+                    "ToJSON(settings)"
+                  ]
+                },
                 {
                   "type": {
                     "value": "PlaySoundCanal"
@@ -28217,6 +28796,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"settings\"",
+                    "\"audio\"",
+                    "ToJSON(settings)"
+                  ]
+                },
                 {
                   "type": {
                     "value": "PlaySoundCanal"
@@ -29200,8 +29789,8 @@
           "persistentUuid": "2a0cf432-71da-427b-9956-cd412687a444",
           "width": 0,
           "x": 0,
-          "y": 750,
-          "zOrder": 8,
+          "y": 0,
+          "zOrder": 80,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -29559,6 +30148,54 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "koin_kecil",
+          "persistentUuid": "c06cd141-86a1-41a2-aafb-73ebe5fe7a49",
+          "width": 0,
+          "x": 1195,
+          "y": 641,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "teks_koin",
+          "persistentUuid": "89f27e4a-d683-4fc1-a4b3-80c5a6887d40",
+          "width": 0,
+          "x": 1018,
+          "y": 641,
+          "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "teks_level",
+          "persistentUuid": "df66ed0d-00ad-499a-9c70-94442a83c098",
+          "width": 0,
+          "x": 72,
+          "y": 643,
+          "zOrder": 37,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -29573,7 +30210,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "default",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -29582,7 +30219,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "level1 (1).png",
+                      "image": "background (2).png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -31884,6 +32521,102 @@
             "lineHeight": 0,
             "color": "255;255;255"
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "teks_koin",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "X 4",
+          "font": "Sprintura Demo.otf",
+          "textAlignment": "left",
+          "characterSize": 60,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "X 4",
+            "font": "Sprintura Demo.otf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 60,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "teks_level",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "Level 4-10",
+          "font": "Sprintura Demo.otf",
+          "textAlignment": "left",
+          "characterSize": 60,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Level 4-10",
+            "font": "Sprintura Demo.otf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 60,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -31971,6 +32704,12 @@
               },
               {
                 "objectName": "teks"
+              },
+              {
+                "objectName": "teks_koin"
+              },
+              {
+                "objectName": "teks_level"
               }
             ]
           },
@@ -32022,6 +32761,26 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "ReadStringFromStorage"
+              },
+              "parameters": [
+                "\"settings\"",
+                "\"audio\"",
+                "",
+                "temp"
+              ]
+            },
+            {
+              "type": {
+                "value": "JSONToVariableStructure2"
+              },
+              "parameters": [
+                "temp",
+                "settings"
+              ]
+            },
             {
               "type": {
                 "value": "PlayMusicCanal"
@@ -34388,7 +35147,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Pengaturan",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -34819,7 +35577,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -34843,16 +35600,6 @@
                     "Toggle",
                     ""
                   ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "settings.BGM",
-                    "=",
-                    "musik_bg"
-                  ]
                 }
               ],
               "events": [
@@ -34871,6 +35618,16 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "settings.BGM",
+                        "=",
+                        "100"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "PlaySoundCanal"
@@ -34912,6 +35669,16 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "settings.BGM",
+                        "=",
+                        "0"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "PlaySoundCanal"
@@ -34959,7 +35726,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -34983,16 +35749,6 @@
                     "Toggle",
                     ""
                   ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "settings.SFX",
-                    "=",
-                    "sound_effect"
-                  ]
                 }
               ],
               "events": [
@@ -35011,6 +35767,16 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "settings.SFX",
+                        "=",
+                        "0"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "PlaySoundCanal"
@@ -35052,6 +35818,16 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "settings.SFX",
+                        "=",
+                        "100"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "PlaySoundCanal"
@@ -35114,6 +35890,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"settings\"",
+                    "\"audio\"",
+                    "ToJSON(settings)"
+                  ]
+                },
                 {
                   "type": {
                     "value": "PlaySoundCanal"
@@ -35212,6 +35998,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"settings\"",
+                    "\"audio\"",
+                    "ToJSON(settings)"
+                  ]
+                },
                 {
                   "type": {
                     "value": "PlaySoundCanal"
@@ -36536,6 +37332,54 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "koin_kecil",
+          "persistentUuid": "704961a4-d5ec-40fb-baf9-166869730f3c",
+          "width": 0,
+          "x": 1159,
+          "y": 643,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "teks_koin",
+          "persistentUuid": "c0c60444-2cd3-48f6-986b-2e4c537bedc2",
+          "width": 0,
+          "x": 1018,
+          "y": 641,
+          "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "teks_level",
+          "persistentUuid": "d8d43dd2-4804-4ead-9ef6-121bf3a14627",
+          "width": 0,
+          "x": 72,
+          "y": 643,
+          "zOrder": 37,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -36550,7 +37394,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "default",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -36559,7 +37403,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "level1 (1).png",
+                      "image": "background (2).png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -38861,6 +39705,102 @@
             "lineHeight": 0,
             "color": "255;255;255"
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "teks_koin",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "X 5",
+          "font": "Sprintura Demo.otf",
+          "textAlignment": "left",
+          "characterSize": 60,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "X 5",
+            "font": "Sprintura Demo.otf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 60,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "teks_level",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "Level 5-10",
+          "font": "Sprintura Demo.otf",
+          "textAlignment": "left",
+          "characterSize": 60,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Level 5-10",
+            "font": "Sprintura Demo.otf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 60,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -38948,6 +39888,12 @@
               },
               {
                 "objectName": "teks"
+              },
+              {
+                "objectName": "teks_koin"
+              },
+              {
+                "objectName": "teks_level"
               }
             ]
           },
@@ -38999,6 +39945,26 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "ReadStringFromStorage"
+              },
+              "parameters": [
+                "\"settings\"",
+                "\"audio\"",
+                "",
+                "temp"
+              ]
+            },
+            {
+              "type": {
+                "value": "JSONToVariableStructure2"
+              },
+              "parameters": [
+                "temp",
+                "settings"
+              ]
+            },
             {
               "type": {
                 "value": "PlayMusicCanal"
@@ -39808,7 +40774,7 @@
                 "teks_kedua",
                 "Text",
                 "=",
-                "\"Di timbangan kiri ada 2 buah lemon Apa yang harus diletakkan di timbangan kanan agar seimbang?\""
+                "\"Di timbangan kiri ada 1 buah jerukApa yang harus diletakkan di timbangan kanan agar seimbang?\""
               ]
             },
             {
@@ -41365,7 +42331,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Pengaturan",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -42093,6 +43058,16 @@
               "actions": [
                 {
                   "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"settings\"",
+                    "\"audio\"",
+                    "ToJSON(settings)"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "PlaySoundCanal"
                   },
                   "parameters": [
@@ -42189,6 +43164,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"settings\"",
+                    "\"audio\"",
+                    "ToJSON(settings)"
+                  ]
+                },
                 {
                   "type": {
                     "value": "PlaySoundCanal"
@@ -43154,8 +44139,8 @@
           "persistentUuid": "2a0cf432-71da-427b-9956-cd412687a444",
           "width": 0,
           "x": 0,
-          "y": 750,
-          "zOrder": 8,
+          "y": 0,
+          "zOrder": 80,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -43513,6 +44498,54 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "koin_kecil",
+          "persistentUuid": "61e78c07-e3ad-4a91-bd2b-c94e67264322",
+          "width": 0,
+          "x": 1159,
+          "y": 643,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "teks_koin",
+          "persistentUuid": "640c794c-79b7-4015-8993-b1f8d2e876bb",
+          "width": 0,
+          "x": 1018,
+          "y": 643,
+          "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "teks_level",
+          "persistentUuid": "3df435d6-ce82-40a7-84b8-6d2d493f18ee",
+          "width": 0,
+          "x": 72,
+          "y": 643,
+          "zOrder": 37,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -43527,7 +44560,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "default",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -43536,7 +44569,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "level1 (1).png",
+                      "image": "background (2).png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -45838,6 +46871,102 @@
             "lineHeight": 0,
             "color": "255;255;255"
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "teks_koin",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "X 6",
+          "font": "Sprintura Demo.otf",
+          "textAlignment": "left",
+          "characterSize": 60,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "X 6",
+            "font": "Sprintura Demo.otf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 60,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "teks_level",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "Level 6-10",
+          "font": "Sprintura Demo.otf",
+          "textAlignment": "left",
+          "characterSize": 60,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Level 6-10",
+            "font": "Sprintura Demo.otf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 60,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -45925,6 +47054,12 @@
               },
               {
                 "objectName": "teks"
+              },
+              {
+                "objectName": "teks_koin"
+              },
+              {
+                "objectName": "teks_level"
               }
             ]
           },
@@ -45976,6 +47111,26 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "ReadStringFromStorage"
+              },
+              "parameters": [
+                "\"settings\"",
+                "\"audio\"",
+                "",
+                "temp"
+              ]
+            },
+            {
+              "type": {
+                "value": "JSONToVariableStructure2"
+              },
+              "parameters": [
+                "temp",
+                "settings"
+              ]
+            },
             {
               "type": {
                 "value": "PlayMusicCanal"
@@ -46785,7 +47940,7 @@
                 "teks_kedua",
                 "Text",
                 "=",
-                "\"Di timbangan kiri ada 2 buah lemon Apa yang harus diletakkan di timbangan kanan agar seimbang?\""
+                "\"Di timbangan kiri ada 1 buah peach Apa yang harus diletakkan di timbangan kanan agar seimbang?\""
               ]
             },
             {
@@ -48342,7 +49497,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Pengaturan",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -49070,6 +50224,16 @@
               "actions": [
                 {
                   "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"settings\"",
+                    "\"audio\"",
+                    "ToJSON(settings)"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "PlaySoundCanal"
                   },
                   "parameters": [
@@ -49166,6 +50330,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"settings\"",
+                    "\"audio\"",
+                    "ToJSON(settings)"
+                  ]
+                },
                 {
                   "type": {
                     "value": "PlaySoundCanal"
@@ -50491,6 +51665,54 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "koin_kecil",
+          "persistentUuid": "98596ba1-2cf8-462a-b904-e1bec08cd120",
+          "width": 0,
+          "x": 1159,
+          "y": 641,
+          "zOrder": 79,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "teks_koin",
+          "persistentUuid": "58baa73c-f701-4b29-916d-185d1a91d003",
+          "width": 0,
+          "x": 1018,
+          "y": 643,
+          "zOrder": 82,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "teks_level",
+          "persistentUuid": "ccc6186f-904d-4f95-8b42-59ee7ff9672e",
+          "width": 0,
+          "x": 72,
+          "y": 643,
+          "zOrder": 83,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -50505,7 +51727,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "default",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -50514,7 +51736,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "level1 (1).png",
+                      "image": "background (2).png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -52816,6 +54038,102 @@
             "lineHeight": 0,
             "color": "255;255;255"
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "teks_koin",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "X 7",
+          "font": "Sprintura Demo.otf",
+          "textAlignment": "left",
+          "characterSize": 60,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "X 7",
+            "font": "Sprintura Demo.otf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 60,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "teks_level",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "level 7-10",
+          "font": "Sprintura Demo.otf",
+          "textAlignment": "left",
+          "characterSize": 60,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "level 7-10",
+            "font": "Sprintura Demo.otf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 60,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -52903,6 +54221,12 @@
               },
               {
                 "objectName": "teks"
+              },
+              {
+                "objectName": "teks_koin"
+              },
+              {
+                "objectName": "teks_level"
               }
             ]
           },
@@ -52954,6 +54278,26 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "ReadStringFromStorage"
+              },
+              "parameters": [
+                "\"settings\"",
+                "\"audio\"",
+                "",
+                "temp"
+              ]
+            },
+            {
+              "type": {
+                "value": "JSONToVariableStructure2"
+              },
+              "parameters": [
+                "temp",
+                "settings"
+              ]
+            },
             {
               "type": {
                 "value": "PlayMusicCanal"
@@ -55320,7 +56664,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Pengaturan",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -56048,6 +57391,16 @@
               "actions": [
                 {
                   "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"settings\"",
+                    "\"audio\"",
+                    "ToJSON(settings)"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "PlaySoundCanal"
                   },
                   "parameters": [
@@ -56144,6 +57497,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"settings\"",
+                    "\"audio\"",
+                    "ToJSON(settings)"
+                  ]
+                },
                 {
                   "type": {
                     "value": "PlaySoundCanal"
@@ -56422,6 +57785,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Winner",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -56926,7 +58290,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4335774304702398,
+        "zoomFactor": 0.47893418845352825,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -57108,7 +58472,7 @@
           "persistentUuid": "2a0cf432-71da-427b-9956-cd412687a444",
           "width": 0,
           "x": 0,
-          "y": 730,
+          "y": 0,
           "zOrder": 80,
           "numberProperties": [],
           "stringProperties": [],
@@ -57468,6 +58832,54 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "koin_kecil",
+          "persistentUuid": "77972000-6da6-41b0-890b-044855fcb76e",
+          "width": 0,
+          "x": 1159,
+          "y": 641,
+          "zOrder": 79,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "teks_koin",
+          "persistentUuid": "4ca11363-b375-4e5d-9b1a-1472b6951e01",
+          "width": 0,
+          "x": 1018,
+          "y": 643,
+          "zOrder": 82,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "teks_level",
+          "persistentUuid": "3e10dbb8-1ede-420a-86e1-d92a8da9d61f",
+          "width": 0,
+          "x": 72,
+          "y": 643,
+          "zOrder": 83,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -57482,7 +58894,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "default",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -57491,7 +58903,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "level1 (1).png",
+                      "image": "background (2).png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -59793,6 +61205,102 @@
             "lineHeight": 0,
             "color": "255;255;255"
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "teks_koin",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "X 8",
+          "font": "Sprintura Demo.otf",
+          "textAlignment": "left",
+          "characterSize": 60,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "X 8",
+            "font": "Sprintura Demo.otf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 60,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "teks_level",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "level 8-10",
+          "font": "Sprintura Demo.otf",
+          "textAlignment": "left",
+          "characterSize": 60,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "level 8-10",
+            "font": "Sprintura Demo.otf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 60,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -59880,6 +61388,12 @@
               },
               {
                 "objectName": "teks"
+              },
+              {
+                "objectName": "teks_koin"
+              },
+              {
+                "objectName": "teks_level"
               }
             ]
           },
@@ -60740,7 +62254,7 @@
                 "teks_kedua",
                 "Text",
                 "=",
-                "\"Di timbangan kiri ada 1 buah nanas,1 buah pisang, dan 2 buah apel Apa yang harus diletakkan di timbangan kanan agar seimbang?\""
+                "\"Di timbangan kiri ada 1 buah anggur,1 buah semangka, dan 1 peach. Apa yang harus diletakkan di timbangan kanan agar seimbang?\""
               ]
             },
             {
@@ -64085,7 +65599,7 @@
           "persistentUuid": "2a0cf432-71da-427b-9956-cd412687a444",
           "width": 0,
           "x": 0,
-          "y": 730,
+          "y": 0,
           "zOrder": 80,
           "numberProperties": [],
           "stringProperties": [],
@@ -64445,6 +65959,54 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "koin_kecil",
+          "persistentUuid": "59c2d9c4-a347-4423-9eeb-460d257c7b35",
+          "width": 0,
+          "x": 1159,
+          "y": 641,
+          "zOrder": 79,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "teks_koin",
+          "persistentUuid": "b771e696-2c28-4afb-a36f-84e5c696e997",
+          "width": 0,
+          "x": 1017,
+          "y": 643,
+          "zOrder": 82,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "teks_level",
+          "persistentUuid": "a107f502-af1d-431c-9029-ba18d160b244",
+          "width": 0,
+          "x": 72,
+          "y": 643,
+          "zOrder": 83,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -64459,7 +66021,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "default",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -64468,7 +66030,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "level1 (1).png",
+                      "image": "background (2).png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -66770,6 +68332,102 @@
             "lineHeight": 0,
             "color": "255;255;255"
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "teks_koin",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "X 9",
+          "font": "Sprintura Demo.otf",
+          "textAlignment": "left",
+          "characterSize": 60,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "X 9",
+            "font": "Sprintura Demo.otf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 60,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "teks_level",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "level 9-10",
+          "font": "Sprintura Demo.otf",
+          "textAlignment": "left",
+          "characterSize": 60,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "level 9-10",
+            "font": "Sprintura Demo.otf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 60,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -66857,6 +68515,12 @@
               },
               {
                 "objectName": "teks"
+              },
+              {
+                "objectName": "teks_koin"
+              },
+              {
+                "objectName": "teks_level"
               }
             ]
           },
@@ -66908,6 +68572,26 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "ReadStringFromStorage"
+              },
+              "parameters": [
+                "\"settings\"",
+                "\"audio\"",
+                "",
+                "temp"
+              ]
+            },
+            {
+              "type": {
+                "value": "JSONToVariableStructure2"
+              },
+              "parameters": [
+                "temp",
+                "settings"
+              ]
+            },
             {
               "type": {
                 "value": "PlayMusicCanal"
@@ -67717,7 +69401,7 @@
                 "teks_kedua",
                 "Text",
                 "=",
-                "\"Di timbangan kiri ada 1 buah nanas,1 buah pisang, dan 2 buah apel Apa yang harus diletakkan di timbangan kanan agar seimbang?\""
+                "\"Di timbangan kiri ada 1 buah pisang,1 buah pear,1 buah jeruk, dan 1 buah mangga Apa yang harus diletakkan di timbangan kanan agar seimbang?\""
               ]
             },
             {
@@ -69274,7 +70958,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Pengaturan",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -70002,6 +71685,16 @@
               "actions": [
                 {
                   "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"settings\"",
+                    "\"audio\"",
+                    "ToJSON(settings)"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "PlaySoundCanal"
                   },
                   "parameters": [
@@ -70098,6 +71791,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"settings\"",
+                    "\"audio\"",
+                    "ToJSON(settings)"
+                  ]
+                },
                 {
                   "type": {
                     "value": "PlaySoundCanal"
@@ -71063,7 +72766,7 @@
           "persistentUuid": "2a0cf432-71da-427b-9956-cd412687a444",
           "width": 0,
           "x": 0,
-          "y": 730,
+          "y": 0,
           "zOrder": 80,
           "numberProperties": [],
           "stringProperties": [],
@@ -71423,6 +73126,54 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "koin_kecil",
+          "persistentUuid": "5d76fe9d-1a8e-4e42-beed-71dbad18c3bc",
+          "width": 0,
+          "x": 1159,
+          "y": 641,
+          "zOrder": 79,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "teks_koin",
+          "persistentUuid": "a34e5036-4e39-4a79-a73a-b06c35c926d5",
+          "width": 0,
+          "x": 1000,
+          "y": 643,
+          "zOrder": 82,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "teks_level",
+          "persistentUuid": "09d0d2f1-af8b-4a0f-b196-f976c382963e",
+          "width": 0,
+          "x": 72,
+          "y": 643,
+          "zOrder": 83,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -71437,7 +73188,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "default",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -71446,7 +73197,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "level1 (1).png",
+                      "image": "background (2).png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -73748,6 +75499,102 @@
             "lineHeight": 0,
             "color": "255;255;255"
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "teks_koin",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "X 10",
+          "font": "Sprintura Demo.otf",
+          "textAlignment": "left",
+          "characterSize": 60,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "X 10",
+            "font": "Sprintura Demo.otf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 60,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "teks_level",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "string": "level 10-",
+          "font": "Sprintura Demo.otf",
+          "textAlignment": "left",
+          "characterSize": 60,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "level 10-",
+            "font": "Sprintura Demo.otf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 60,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -73835,6 +75682,12 @@
               },
               {
                 "objectName": "teks"
+              },
+              {
+                "objectName": "teks_koin"
+              },
+              {
+                "objectName": "teks_level"
               }
             ]
           },
@@ -73886,6 +75739,26 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "ReadStringFromStorage"
+              },
+              "parameters": [
+                "\"settings\"",
+                "\"audio\"",
+                "",
+                "temp"
+              ]
+            },
+            {
+              "type": {
+                "value": "JSONToVariableStructure2"
+              },
+              "parameters": [
+                "temp",
+                "settings"
+              ]
+            },
             {
               "type": {
                 "value": "PlayMusicCanal"
@@ -74695,7 +76568,7 @@
                 "teks_kedua",
                 "Text",
                 "=",
-                "\"Di timbangan kiri ada 1 buah nanas,1 buah pisang, dan 2 buah apel Apa yang harus diletakkan di timbangan kanan agar seimbang?\""
+                "\"Di timbangan kiri ada 1 buah mangga, 1 buah lemon, dan 2 buah anggur. Apa yang harus diletakkan di timbangan kanan agar seimbang?\""
               ]
             },
             {
@@ -74980,6 +76853,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Peach",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -76682,7 +78556,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -76706,16 +78579,6 @@
                     "Toggle",
                     ""
                   ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "settings.BGM",
-                    "=",
-                    "musik_bg"
-                  ]
                 }
               ],
               "events": [
@@ -76734,6 +78597,16 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "settings.BGM",
+                        "=",
+                        "100"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "PlaySoundCanal"
@@ -76775,6 +78648,16 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "settings.BGM",
+                        "=",
+                        "0"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "PlaySoundCanal"
@@ -76822,7 +78705,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -76846,16 +78728,6 @@
                     "Toggle",
                     ""
                   ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "settings.SFX",
-                    "=",
-                    "sound_effect"
-                  ]
                 }
               ],
               "events": [
@@ -76874,6 +78746,16 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "settings.SFX",
+                        "=",
+                        "0"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "PlaySoundCanal"
@@ -76915,6 +78797,16 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "settings.SFX",
+                        "=",
+                        "100"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "PlaySoundCanal"
@@ -77056,6 +78948,16 @@
                     "layer",
                     "False",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"settings\"",
+                    "\"audio\"",
+                    "ToJSON(settings)"
                   ]
                 }
               ]
@@ -77225,6 +79127,16 @@
                     "ButtonFSM",
                     "yes"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"settings\"",
+                    "\"audio\"",
+                    "ToJSON(settings)"
+                  ]
                 }
               ]
             },
@@ -77353,7 +79265,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Winner",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -77530,7 +79441,7 @@
                   "parameters": [
                     "loadingke",
                     "=",
-                    "\"Home Page\""
+                    "\"Akhir\""
                   ]
                 },
                 {
@@ -77858,7 +79769,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.26364576737708,
+        "zoomFactor": 0.29122588669111144,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -78161,6 +80072,26 @@
           "actions": [
             {
               "type": {
+                "value": "ReadStringFromStorage"
+              },
+              "parameters": [
+                "\"settings\"",
+                "\"audio\"",
+                "",
+                "temp"
+              ]
+            },
+            {
+              "type": {
+                "value": "JSONToVariableStructure2"
+              },
+              "parameters": [
+                "temp",
+                "settings"
+              ]
+            },
+            {
+              "type": {
                 "value": "PlayMusicCanal"
               },
               "parameters": [
@@ -78211,6 +80142,43 @@
                 "",
                 "100",
                 "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ButtonStates::ButtonFSM::IsClicked"
+              },
+              "parameters": [
+                "menu",
+                "ButtonFSM",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "loadingke",
+                "=",
+                "\"Home Page\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"loadingke\"",
+                ""
               ]
             }
           ]
